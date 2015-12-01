@@ -5,7 +5,7 @@ Based on the nodeJS express framework and using nunjucks as a template library.
 
 You can run the application using the default Docker container for node based on the root Dockerfile in the project. For more info on using docker containers go <a href="http://docs.docker.com/engine/userguide/usingdocker/">here</a>.
 
-To build the project in docker:
+To build the docker image:
 docker build -t lbmdrp .
 
 To run the project in docker:
