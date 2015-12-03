@@ -1,9 +1,11 @@
 body {
 	width: 1200px;
 	margin: auto;
-	background-image: url("C:/Users/Matt/Desktop/lbmdrpmocups/images/background2.png");
+	background-image: url("C:/Users/mjames/Desktop/lbmdrp/lbmdrpmocups/images/background2.png");
 	background-size: cover;
 	background-repeat: no-repeat;
+	/*opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
 
 }
 
@@ -56,5 +58,4 @@ body {
 	width: 80%;
 	/*background: black;*/
 	margin: auto; 
-
 }

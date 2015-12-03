@@ -1,0 +1,1 @@
+nodemon -e js,html,css ./bin/www
