@@ -1,12 +1,10 @@
 body {
-	width: 1200px;
 	margin: auto;
 	background-image: url("/images/background7.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	/*opacity: 0.4;
     filter: alpha(opacity=40); /* For IE8 and earlier */
-
 }
 
 #header {
@@ -35,9 +33,41 @@ body {
 	font-family: 'Poiret One', cursive;
 	float: right;
 	font-size:20px;
+	color: white;
+	padding-right: 25%;
 }
 
-.headline {
-	font-family: 'News Cycle', sans-serif;
-	font-size: 50px;
+.box{
+  margin: 100px auto;
+  margin-top: 300px;
+  width: 15%;
+  height: 50px;
+  padding-right: 25px;
+
+}
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 input#search{
+  width: 300px;
+  height: 50px;
+  background: gray;
+  /*border: none;*/
+  font-size: 25px;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border-color: black;
+
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
 }
