@@ -65,3 +65,32 @@ body {
     border-radius: 15px;
     border-color: black;
 }
+
+.seperator {
+    height: 200px;
+    width: 100%;
+    clear: both;
+}
+
+#footer {
+    margin: auto; 
+    height: 200px;
+    clear: both;
+    /*background-color:lightgray;*/
+    
+}
+
+.footerlogo{
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+    font-size: 150%;
+    text-align: center;
+    letter-spacing: 15px;
+    width: 100%;
+    /*background: black;*/
+}
