@@ -42,7 +42,7 @@ body {
   margin-top: 300px;
   width: 15%;
   height: 50px;
-  padding-right: 25px;
+  padding-right: 75px;
 
 }
 .container-1{
@@ -65,9 +65,4 @@ body {
   border-radius: 15px;
   border-color: black;
 
-  -webkit-transition: background .55s ease;
-  -moz-transition: background .55s ease;
-  -ms-transition: background .55s ease;
-  -o-transition: background .55s ease;
-  transition: background .55s ease;
 }
