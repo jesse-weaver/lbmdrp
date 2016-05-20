@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "start:watch": "nodemon -e js,html,css ./bin/www",
+    "build": "babel src/ -d build",
     "babel": "babel src/ -d build",
     "babel:watch": "babel -w src/ -d build --source-maps"
   },

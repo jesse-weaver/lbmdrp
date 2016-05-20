@@ -16,6 +16,7 @@ http://localhost:3030 or http://127.0.0.1:3030
 
 
 If you want to run the project locally not using a docker container do the following:
-* npm install
-* npm start
 
+* npm install
+* npm run build
+* npm run start:watch
