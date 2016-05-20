@@ -9,15 +9,14 @@ body {
 
 #header {
 	width: 100%;
-	height: 120px;
-	margin-bottom: 50px;	
+	margin-top: 25px;
 }
 
 .logo {
 	font-family: 'Orbitron', sans-serif;
 	color: white;
 	text-shadow:
-   -1px -1px 0 #000,  
+   -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
      1px 1px 0 #000;
@@ -26,7 +25,7 @@ body {
 	letter-spacing: 15px;
 	width: 80%;
 	/*background: black;*/
-	margin: auto; 
+	margin: auto;
 }
 
 .blurb {
@@ -37,21 +36,21 @@ body {
 	padding-right: 25%;
 }
 
-.box{
-    margin: 100px auto;
-    margin-top: 300px;
+.box {
+    margin: 0 auto;
+    margin-top: 150px;
     width: 15%;
     height: 50px;
     padding-right: 75px;
 
 }
-.container-1{
+.main {
     width: 300px;
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
 }
-.container-1 input#search{
+.main input#search{
     width: 300px;
     height: 50px;
     background: gray;
@@ -61,8 +60,8 @@ body {
     color: #63717f;
     padding-left: 45px;
     -webkit-border-radius: 5px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     border-color: black;
 }
 
@@ -73,18 +72,16 @@ body {
 }
 
 #footer {
-    margin: auto; 
-    height: 200px;
+    margin: auto;
+    height: 20%;
     clear: both;
-    /*background-color:lightgray;*/
-    
 }
 
 .footerlogo{
     font-family: 'Orbitron', sans-serif;
     color: white;
     text-shadow:
-   -1px -1px 0 #000,  
+   -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
      1px 1px 0 #000;
