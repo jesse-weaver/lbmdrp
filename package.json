@@ -5,11 +5,11 @@
   "main": "app.js",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node ./build/server.js",
     "start:watch": "nodemon -e js,html,css ./bin/www",
-    "build": "babel src/ -d build",
-    "babel": "babel src/ -d build",
-    "babel:watch": "babel -w src/ -d build --source-maps"
+    "build": "babel src -d build",
+    "babel": "babel src -d build",
+    "babel:watch": "babel -w src -d build --source-maps"
   },
   "repository": {
     "type": "git",

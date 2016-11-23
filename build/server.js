@@ -1,32 +1,37 @@
-#!/usr/bin/env node
+'use strict';
 
-/**
- * Module dependencies.
- */
+var _app = require('./app');
 
-var app = require('../build/app');
-var debug = require('debug')('lmbdrp:server');
-var http = require('http');
+var _app2 = _interopRequireDefault(_app);
 
+var _debug = require('debug');
+
+var _debug2 = _interopRequireDefault(_debug);
+
+var _http = require('http');
+
+var _http2 = _interopRequireDefault(_http);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var debug = (0, _debug2.default)('lmbdrp:server');
 /**
  * Get port from environment and store in Express.
  */
-
+/**
+ * Module dependencies.
+ */
 var port = normalizePort(process.env.PORT || '3030');
-console.log('default port', port);
-port = 3030;
-app.set('port', port);
+_app2.default.set('port', port);
 
 /**
  * Create HTTP server.
  */
-
-var server = http.createServer(app);
+var server = _http2.default.createServer(_app2.default);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
-
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
@@ -34,7 +39,6 @@ server.on('listening', onListening);
 /**
  * Normalize a port into a number, string, or false.
  */
-
 function normalizePort(val) {
   var port = parseInt(val, 10);
 
@@ -60,9 +64,7 @@ function onError(error) {
     throw error;
   }
 
-  var bind = typeof port === 'string'
-    ? 'Pipe ' + port
-    : 'Port ' + port;
+  var bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
 
   // handle specific listen errors with friendly messages
   switch (error.code) {
@@ -85,8 +87,7 @@ function onError(error) {
 
 function onListening() {
   var addr = server.address();
-  var bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
+  var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+//# sourceMappingURL=server.js.map
