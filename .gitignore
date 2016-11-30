@@ -10,3 +10,6 @@ node_modules
 *.swp
 *.swn
 *.swo
+
+# transpiled assets
+/dist
