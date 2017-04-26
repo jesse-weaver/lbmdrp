@@ -1,7 +1,7 @@
 /**
  * Module dependencies.
  */
-import app from './app';
+import app from './express';
 import logger from 'debug';
 import http from 'http';
 

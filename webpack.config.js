@@ -1,35 +1,37 @@
-var webpack = require('webpack');
-var path = require('path');
+const webpack = require('webpack');
+const path = require('path');
+const merge = require('webpack-merge');
 
-var BUILD_DIR = path.resolve(__dirname, 'public');
-var APP_DIR = path.resolve(__dirname, 'src/app');
-
-var config = {
-  context: __dirname + "/app",
-  entry: {
-    javascript: APP_DIR + '/main.js',
-    html: APP_DIR + "/index.html"
-  },
-  output: {
-    path: BUILD_DIR,
-    filename: 'app.js'
-  },
-  resolve: {
-    extensions: ['', '.js', '.jsx', '.json']
-  },
-  module : {
-    loaders : [
-      {
-        test : /\.jsx?/,
-        include : APP_DIR,
-        loaders : ["react-hot",'babel-loader']
-      },
-      {
-        test: /\.html$/,
-        loader: "file?name=[name].[ext]",
-      }
-    ]
-  }
+const PATHS = {
+  app: path.resolve(__dirname, 'src/app'),
+  build: path.join(__dirname, 'public')
 };
 
-module.exports = config;
+const common = {
+  entry: {
+    app: PATHS.app
+  },
+  output: {
+    path: PATHS.build,
+    filename: '[name].js'
+  },
+  plugins: [
+    new webpack.NamedModulesPlugin(),
+  ]
+};
+
+// var webpackConfig = {
+//   entry: { app: '/home/jesse/Code/lbmdrp/src/app' },
+//   output:
+//    {
+//      path: '/home/jesse/Code/lbmdrp/public',
+//      filename: '[name].js'
+//    },
+//   performance: { hints: false },
+//   plugins: [ NamedModulesPlugin { options: {} } ]
+// };
+
+module.exports = function(env) {
+  console.log('env:', env);
+  return common;
+}

@@ -1,8 +1,8 @@
 'use strict';
 
-var _app = require('./app');
+var _express = require('./express');
 
-var _app2 = _interopRequireDefault(_app);
+var _express2 = _interopRequireDefault(_express);
 
 var _debug = require('debug');
 
@@ -22,12 +22,12 @@ var debug = (0, _debug2.default)('lmbdrp:server');
  * Module dependencies.
  */
 var port = normalizePort(process.env.PORT || '3030');
-_app2.default.set('port', port);
+_express2.default.set('port', port);
 
 /**
  * Create HTTP server.
  */
-var server = _http2.default.createServer(_app2.default);
+var server = _http2.default.createServer(_express2.default);
 
 /**
  * Listen on provided port, on all network interfaces.
