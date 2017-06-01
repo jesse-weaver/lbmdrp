@@ -6,13 +6,13 @@
   "private": true,
   "scripts": {
     "lint": "eslint . --cache",
-    "start": "node ./dist/server.js",
-    "start:watch": "nodemon -e js,html,css ./dist/server.js",
-    "start:dev": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
-    "start:hotreload": "",
-    "build": "babel src -d dist",
-    "babel": "babel src -d dist",
-    "babel:watch": "babel -w src -d dist --source-maps",
+    "start": "node ./build/server.js",
+    "start:watch": "nodemon -e js,html,css ./build/server.js",
+    "start:dev": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\" ./build/server.js",
+    "start:hotreload": "webpack-dev-server --env development",
+    "build": "babel src -d build",
+    "babel": "babel src -d build",
+    "babel:watch": "babel -w src -d build --source-maps",
     "webpack": "webpack --env production",
     "webpack:watch": "webpack --watch"
   },
@@ -55,7 +55,7 @@
     "react-hot-loader": "^3.0.0-beta.6",
     "webpack": "^2.2.0-rc.4",
     "webpack-dev-middleware": "^1.9.0",
-    "webpack-dev-server": "^2.2.0-rc.0",
+    "webpack-dev-server": "^2.4.5",
     "webpack-merge": "^2.3.1"
   }
 }
