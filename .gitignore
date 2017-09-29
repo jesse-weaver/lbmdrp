@@ -11,6 +11,8 @@ node_modules
 *.swn
 *.swo
 
+.idea/
+
 # transpiled assets
 /dist
 /build
