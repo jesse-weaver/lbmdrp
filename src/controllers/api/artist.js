@@ -1,7 +1,8 @@
 import request from 'request';
-import { merge, get } from 'lodash';
+import { get } from 'lodash';
+import logger from 'debug';
 
-
+const debug = logger('controllers:api:artist');
 const baseUrl = 'https://music-api.musikki.com/v1';
 
 export default class Artist {
@@ -10,29 +11,28 @@ export default class Artist {
     const query = get(req, 'query.q', '');
     const requestUrl = `${baseUrl}/artists/?q=${query}&limit=50`;
 
-    let requestOptions = {
+    const requestOptions = {
       url: requestUrl,
       json: true,
-      headers: res.locals.apiKeys.musikki
+      headers: res.locals.apiKeys.musikki,
     };
 
     const callback = (err, response, body) => {
       if (err) {
-        console.log(err);
-        throw(err);
+        debug('Error while trying to retrieve artists search');
+        throw (err);
       }
+
       if (response.statusCode !== 200) {
-        console.log(`requestUrl: ${requestOptions.url}`);
-        console.log('bad response man: ' + response.statusCode);
+        debug(`requestUrl: ${requestOptions.url}`);
+        debug(`bad response man: ${response.statusCode}`);
       }
-      let values = [];
-      const results = body.results.map((result) => {
-        return {
-          mkid: result.mkid,
-          name: result.name,
-          image: result.image
-        };
-      });
+      const results = body.results.map(result => ({
+        mkid: result.mkid,
+        name: result.name,
+        image: result.image,
+      }));
+
       res.json(results);
     };
 

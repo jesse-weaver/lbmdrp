@@ -5,21 +5,22 @@ const parts = require('./webpack.parts');
 
 const PATHS = {
   app: path.resolve(__dirname, 'src/app'),
-  build: path.join(__dirname, 'public')
+  build: path.join(__dirname, 'public'),
 };
 
 const commonConfig = merge([{
-    entry: {
-      app: PATHS.app
-    },
-    output: {
-      path: PATHS.build,
-      filename: '[name].js'
-    },
-    plugins: [
-      new webpack.NamedModulesPlugin(),
-    ],
+  entry: {
+    app: PATHS.app,
   },
+  output: {
+    path: PATHS.build,
+    filename: '[name].js',
+  },
+  plugins: [
+    new webpack.NamedModulesPlugin(),
+  ],
+},
+  parts.loadJavaScript({ include: PATHS.app }),
 ]);
 
 const productionConfig = merge([
@@ -42,10 +43,10 @@ const developmentConfig = merge([
 //   plugins: [ NamedModulesPlugin { options: {} } ]
 // };
 
-module.exports = function(env) {
+module.exports = function webpackConf(env) {
   console.log('env:', env);
   if (env === 'production') {
     return merge(commonConfig, productionConfig);
   }
   return merge(commonConfig, developmentConfig);
-}
+};

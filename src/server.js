@@ -1,29 +1,13 @@
 /**
  * Module dependencies.
  */
-import app from './express';
 import logger from 'debug';
 import http from 'http';
-
+import app from './express';
 
 const debug = logger('lmbdrp:server');
-/**
- * Get port from environment and store in Express.
- */
-const port = normalizePort(process.env.PORT || '3030');
-app.set('port', port);
-
-/**
- * Create HTTP server.
- */
 const server = http.createServer(app);
 
-/**
- * Listen on provided port, on all network interfaces.
- */
-server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
 
 /**
  * Normalize a port into a number, string, or false.
@@ -44,9 +28,18 @@ function normalizePort(val) {
   return false;
 }
 
+const port = normalizePort(process.env.PORT || '3030');
+
 /**
- * Event listener for HTTP server "error" event.
+ * Event listener for HTTP server "listening" event.
  */
+function onListening() {
+  const addr = server.address();
+  const bind = typeof addr === 'string'
+    ? `pipe ${addr}`
+    : `port ${addr.port}`;
+  debug(`Listening on ${bind}`);
+}
 
 function onError(error) {
   if (error.syscall !== 'listen') {
@@ -54,17 +47,17 @@ function onError(error) {
   }
 
   const bind = typeof port === 'string'
-    ? 'Pipe ' + port
-    : 'Port ' + port;
+    ? `pipe ${port}`
+    : `Port ${port}`;
 
   // handle specific listen errors with friendly messages
   switch (error.code) {
     case 'EACCES':
-      console.error(bind + ' requires elevated privileges');
+      console.error(`${bind} requires elevated privileges`);
       process.exit(1);
       break;
     case 'EADDRINUSE':
-      console.error(bind + ' is already in use');
+      console.error(`${bind} is already in use`);
       process.exit(1);
       break;
     default:
@@ -73,13 +66,13 @@ function onError(error) {
 }
 
 /**
- * Event listener for HTTP server "listening" event.
+ * Get port from environment and store in Express.
  */
+app.set('port', port);
 
-function onListening() {
-  const addr = server.address();
-  const bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
-  console.log('Listening on ' + bind);
-}
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
