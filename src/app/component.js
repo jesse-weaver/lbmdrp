@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/header/Header.jsx';
+import Search from './components/search/Search.jsx';
+
 
 const HelloComponent = function helloComponent() {
   return <div>Giddy up</div>;
@@ -8,8 +10,9 @@ const HelloComponent = function helloComponent() {
 
 const PageLayout = function pageLayout() {
   return (
-    <div className="header">
+    <div>
       <Header/>
+      <Search/>
     </div>
   );
 }
