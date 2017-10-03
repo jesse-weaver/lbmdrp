@@ -13,7 +13,7 @@
     "start:watch": "nodemon -e js,html,css ./dist/server.js",
     "start:dev": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\" ./dist/server.js",
     "start:hotreload": "",
-    "build": "babel src -d dist",
+    "build": "babel src -d dist --source-maps && webpack --env production",
     "babel": "babel src -d dist",
     "babel:watch": "babel -w src -d dist --source-maps",
     "webpack": "webpack --env production",

@@ -1,7 +1,7 @@
-# lbmdrp
-LBMDRP - follow artists and keep up to date
+# lbmdrop
+LBMDROP - follow artists and keep up to date
 
-Based on the nodeJS express framework and using nunjucks as a template library.
+Based on the nodeJS express framework and react.
 
 You can run the application using the default Docker container for node based on the root Dockerfile in the project. For more info on using docker containers go <a href="http://docs.docker.com/engine/userguide/usingdocker/">here</a>.
 
@@ -19,4 +19,10 @@ If you want to run the project locally not using a docker container do the follo
 
 * npm install
 * npm run build
+* npm run start
+
+To develop and pick up changes you'll need to run the following 3 commands in different terminal sessions:
+
+* npm run babel:watch
+* npm run webpack:watch
 * npm run start:watch
