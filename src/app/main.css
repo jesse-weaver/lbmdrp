@@ -7,3 +7,17 @@ body {
   color: #fff;
 
 }
+
+.container {
+  display: grid;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  grid-template-rows: minmax(10%, auto);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header search search"
+  "newrelease newrelease newrelease newrelease newrelease"
+  "news news news news news"
+  "footer footer footer footer footer"
+
+}

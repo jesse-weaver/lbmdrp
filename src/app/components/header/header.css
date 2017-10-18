@@ -1,5 +1,5 @@
 .header {
   font-size: 5em;
-  text-align: center;
   font-family: 'Titillium Web', sans-serif;
+  grid-area: header;
 }

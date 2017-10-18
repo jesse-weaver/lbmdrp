@@ -10,7 +10,7 @@ const HelloComponent = function helloComponent() {
 
 const PageLayout = function pageLayout() {
   return (
-    <div>
+    <div className="container">
       <Header/>
       <Search/>
     </div>
