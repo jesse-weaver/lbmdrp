@@ -28,8 +28,8 @@ const productionConfig = merge([
 ]);
 
 const developmentConfig = merge([
-  parts.loadCSS(),
-  // parts.extractCSS({ use: 'css-loader' }),
+  // parts.loadCSS(),
+  parts.extractCSS({ use: 'css-loader' }),
 ]);
 
 // var webpackConfig = {

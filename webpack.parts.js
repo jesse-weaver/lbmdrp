@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 exports.extractCSS = ({ include, exclude, use }) => {
   // Output extracted CSS to a file
   const plugin = new ExtractTextPlugin({
-    filename: '[name].css',
+    filename: '/stylesheets/[name].css',
   });
 
   return {
@@ -65,7 +65,7 @@ exports.loadJavaScript = ({ include, exclude }) => ({
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['es2015', 'react'],
+          presets: ['es2015', 'react', 'stage-0'],
         },
       },
     ],
