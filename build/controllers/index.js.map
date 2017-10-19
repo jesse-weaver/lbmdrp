@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/controllers/index.js"],"names":[],"mappings":";;;;;;;;;;IAAqB,K;;;;;;;yBACP,G,EAAK,G,EAAK;AACpB,UAAI,MAAJ,CAAW,YAAX,EAAyB,EAAE,OAAO,mBAAT,EAAzB;AACD;;;;;;kBAHkB,K","file":"index.js","sourcesContent":["export default class Index {\n  static home(req, res) {\n    res.render('index.html', { title: 'Welcome to LBMDRP' });\n  }\n}\n"]}
