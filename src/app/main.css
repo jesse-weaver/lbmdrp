@@ -6,12 +6,13 @@ body {
   background-size: cover;
   color: #fff;
 
+
 }
 
 .container {
   display: grid;
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
   grid-template-rows: minmax(10%, auto);
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
