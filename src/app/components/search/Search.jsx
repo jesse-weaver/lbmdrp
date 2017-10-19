@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import search from './search.css';
 
 export default class Search extends Component {
+
+  handleClick = () => {
+      console.log('this is crazy');
+  }
+
   render() {
     return (
     <div className="SearchBar">
-        <form method="get" action="/search" id="search">
           <input name="q" type="text" size="40" placeholder="Search Artists..." />
-        </form>
+          <button name="search" value="search" onClick={this.handleClick} />
     </div>
     );
   }

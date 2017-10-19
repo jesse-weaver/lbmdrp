@@ -11,8 +11,8 @@ const HelloComponent = function helloComponent() {
 const PageLayout = function pageLayout() {
   return (
     <div>
-      <Header/>
-      <Search/>
+      <Header />
+      <Search />
     </div>
   );
 }
