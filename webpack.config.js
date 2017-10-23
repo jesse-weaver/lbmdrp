@@ -19,6 +19,10 @@ const commonConfig = merge([{
   plugins: [
     new webpack.NamedModulesPlugin(),
   ],
+  node: {
+    dns: 'mock',
+    net: 'mock'
+  },
 },
   parts.loadJavaScript({ include: PATHS.app }),
 ]);
