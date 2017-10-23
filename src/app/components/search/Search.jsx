@@ -29,7 +29,7 @@ export default class Search extends Component {
 
   handleClick = () => {
     const query = this.searchInput.value;
-    this.fetchUrl(query);
+    this.handleFetch(query);
   }
 
   render() {
