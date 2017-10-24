@@ -43,7 +43,7 @@ export default class Search extends Component {
           placeholder="Search Artists..."
           ref={(input) => { this.searchInput = input; }}
         />
-        <button className="searchbutton" name="search" value="search" onClick={this.handleClick}/>
+        <button className="searchbutton" name="search" value="search" onClick={this.handleClick}>SEARCH</button>
       </div>
     );
   }
