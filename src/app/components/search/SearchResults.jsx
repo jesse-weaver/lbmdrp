@@ -17,7 +17,7 @@ export default class Search extends Component {
     } = artist;
 
     return (
-      <div className="result">
+      <div className="result" key={mkid}>
         <div className="artist-name">{name}</div>
         <div className="artist-image"><img src={image}/></div>
       </div>
