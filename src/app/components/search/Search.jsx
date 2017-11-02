@@ -1,49 +1,39 @@
-import React, {Component} from 'react';
-// import { fetch } from 'fetch';
+import React, { Component, PropTypes } from 'react';
 import search from './search.css';
 
 export default class Search extends Component {
 
+  static propTypes = {
+    handleSearch: PropTypes.func,
+  }
+
   constructor(props) {
     super(props);
-    this.state = {
-      results: [],
-      query: ''
-    }
   }
 
-  // this queries the api for data
-  handleFetch = (query) => {
-    const fetchUrl = `/api/artist?q=${query}`;
-    this.setState({query});
-
-    fetch(fetchUrl)
-      .then(response => response.json())
-      .then((results) => {
-        console.log(results);
-        this.setState({results});
-      }).catch(err => {
-        console.log(`Errors when fetching ${fetchUrl}:`, err);
-      });
-  }
-
-  handleClick = () => {
-    const query = this.searchInput.value;
-    this.handleFetch(query);
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.props.handleSearch(this.searchInput.value);
   }
 
   render() {
+    const {
+      handleClick,
+    } = this.props;
+
     return (
       <div className="search">
-        <input
-          className="searchbox"
-          name="q"
-          type="text"
-          size="40"
-          placeholder="Search Artists..."
-          ref={(input) => { this.searchInput = input; }}
-        />
-        <button className="searchbutton" name="search" value="search" onClick={this.handleClick}>SEARCH</button>
+        <form onSubmit={this.handleSubmit}>
+          <input
+            className="searchbox"
+            name="q"
+            type="text"
+            size="40"
+            placeholder="Search Artists..."
+            ref={(input) => { this.searchInput = input; }}
+          />
+          <input type="submit" className="searchbutton" name="search" value="Search" />
+        </form>
       </div>
     );
   }
