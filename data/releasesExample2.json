@@ -1,0 +1,748 @@
+{
+    "summary": {
+        "page": 1,
+        "limit": 10,
+        "total_pages": 4,
+        "result_count": 31,
+        "errors": []
+    },
+    "results": [
+        {
+            "mkid": 101673988,
+            "foreign_ids": [
+                {
+                    "id": "cdc6bed0-4e3e-4105-ba04-df8897ce7555",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "ep",
+            "subtypes": [
+                "studio"
+            ],
+            "title": "Friday the 13th",
+            "cover": "http://images.musikki.com/releases/mbid/cdc6bed0-4e3e-4105-ba04-df8897ce7555",
+            "date": {
+                "year": 2016,
+                "month": 6,
+                "day": 17,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100001022,
+                "name": "Misfits Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100009486,
+                    "name": "Misfits",
+                    "image": "http://images.musikki.com/artists/mbid/936addc3-91aa-49de-8ec0-0dc186de151f",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Lodi",
+                            "state": "New Jersey",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": null,
+                            "state": null,
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 101605571,
+            "foreign_ids": [
+                {
+                    "id": "08a6a2f5-e273-4c9b-bcbf-c422e9667bfa",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "single",
+            "subtypes": [
+                "studio"
+            ],
+            "title": "Vampire Girl / Zombie Girl",
+            "cover": "http://images.musikki.com/releases/mbid/08a6a2f5-e273-4c9b-bcbf-c422e9667bfa",
+            "date": {
+                "year": 2015,
+                "month": 11,
+                "day": 13,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100001022,
+                "name": "Misfits Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100009486,
+                    "name": "Misfits",
+                    "image": "http://images.musikki.com/artists/mbid/936addc3-91aa-49de-8ec0-0dc186de151f",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Lodi",
+                            "state": "New Jersey",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": null,
+                            "state": null,
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 101264305,
+            "foreign_ids": [
+                {
+                    "id": "4565cad6-2fcc-4989-a5ae-16cafb4fee1b",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "album",
+            "subtypes": [
+                "live"
+            ],
+            "title": "DEA.D. Alive!",
+            "cover": "http://images.musikki.com/releases/mbid/4565cad6-2fcc-4989-a5ae-16cafb4fee1b",
+            "date": {
+                "year": 2013,
+                "month": null,
+                "day": null,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100001022,
+                "name": "Misfits Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100009486,
+                    "name": "Misfits",
+                    "image": "http://images.musikki.com/artists/mbid/936addc3-91aa-49de-8ec0-0dc186de151f",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Lodi",
+                            "state": "New Jersey",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": null,
+                            "state": null,
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 101098773,
+            "foreign_ids": [
+                {
+                    "id": "7dbbc33a-9038-401f-ad42-27f11f22f521",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "album",
+            "subtypes": [
+                "studio"
+            ],
+            "title": "The Devil's Rain",
+            "cover": "http://images.musikki.com/releases/mbid/7dbbc33a-9038-401f-ad42-27f11f22f521",
+            "date": {
+                "year": 2011,
+                "month": 10,
+                "day": 4,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100001022,
+                "name": "Misfits Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100009486,
+                    "name": "Misfits",
+                    "image": "http://images.musikki.com/artists/mbid/936addc3-91aa-49de-8ec0-0dc186de151f",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Lodi",
+                            "state": "New Jersey",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": null,
+                            "state": null,
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 100975394,
+            "foreign_ids": [
+                {
+                    "id": "b4f29c57-5e5c-4e50-9ec5-de0ca20374af",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "single",
+            "subtypes": [
+                "studio"
+            ],
+            "title": "Land of the Dead",
+            "cover": "http://images.musikki.com/releases/mbid/b4f29c57-5e5c-4e50-9ec5-de0ca20374af",
+            "date": {
+                "year": 2009,
+                "month": 10,
+                "day": 27,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100001022,
+                "name": "Misfits Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100009486,
+                    "name": "Misfits",
+                    "image": "http://images.musikki.com/artists/mbid/936addc3-91aa-49de-8ec0-0dc186de151f",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Lodi",
+                            "state": "New Jersey",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": null,
+                            "state": null,
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 100163306,
+            "foreign_ids": [
+                {
+                    "id": "65f71253-07f9-3d48-aa26-69b97e26ef53",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "single",
+            "subtypes": [
+                "studio"
+            ],
+            "title": "Day the Earth Caught Fire",
+            "cover": "http://images.musikki.com/releases/mbid/65f71253-07f9-3d48-aa26-69b97e26ef53",
+            "date": {
+                "year": 2003,
+                "month": 11,
+                "day": 4,
+                "timestamp": null
+            },
+            "main_label": null,
+            "collaboration_reference": {
+                "mkid": 100825149,
+                "name": "Misfits / BALZAC"
+            },
+            "artist_references": [
+                {
+                    "mkid": 100009486,
+                    "name": "Misfits",
+                    "image": "http://images.musikki.com/artists/mbid/936addc3-91aa-49de-8ec0-0dc186de151f",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Lodi",
+                            "state": "New Jersey",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": null,
+                            "state": null,
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                },
+                {
+                    "mkid": 100125062,
+                    "name": "BALZAC",
+                    "image": "http://images.musikki.com/artists/mbid/9b6dc461-d350-41c2-9cd7-06e64ae53528",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Kyoto",
+                            "state": "Kyoto",
+                            "zip_code": null,
+                            "country": {
+                                "name": "Japan",
+                                "code": "JP"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": null,
+                            "state": "Osaka",
+                            "zip_code": null,
+                            "country": {
+                                "name": "Japan",
+                                "code": "JP"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 100143526,
+            "foreign_ids": [
+                {
+                    "id": "32f582a1-97fb-3fe6-b786-258255d6dd7d",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "album",
+            "subtypes": [
+                "studio"
+            ],
+            "title": "Project 1950",
+            "cover": "http://images.musikki.com/releases/mbid/32f582a1-97fb-3fe6-b786-258255d6dd7d",
+            "date": {
+                "year": 2003,
+                "month": 7,
+                "day": 29,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100001022,
+                "name": "Misfits Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100009486,
+                    "name": "Misfits",
+                    "image": "http://images.musikki.com/artists/mbid/936addc3-91aa-49de-8ec0-0dc186de151f",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Lodi",
+                            "state": "New Jersey",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": null,
+                            "state": null,
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 100149007,
+            "foreign_ids": [
+                {
+                    "id": "293afa0c-ea01-31ae-bc06-5921584baf82",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "album",
+            "subtypes": [
+                "compilation"
+            ],
+            "title": "12 Hits From Hell",
+            "cover": "http://images.musikki.com/releases/mbid/293afa0c-ea01-31ae-bc06-5921584baf82",
+            "date": {
+                "year": 2002,
+                "month": null,
+                "day": null,
+                "timestamp": null
+            },
+            "main_label": null,
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100009486,
+                    "name": "Misfits",
+                    "image": "http://images.musikki.com/artists/mbid/936addc3-91aa-49de-8ec0-0dc186de151f",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Lodi",
+                            "state": "New Jersey",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": null,
+                            "state": null,
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 100159245,
+            "foreign_ids": [
+                {
+                    "id": "91328467-5172-3e4f-bb0f-9df0d9c91bc6",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "album",
+            "subtypes": [
+                "studio"
+            ],
+            "title": "Cuts from the Crypt: 1996-2001",
+            "cover": "http://images.musikki.com/releases/mbid/91328467-5172-3e4f-bb0f-9df0d9c91bc6",
+            "date": {
+                "year": 2001,
+                "month": 10,
+                "day": 30,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100000036,
+                "name": "Roadrunner Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100009486,
+                    "name": "Misfits",
+                    "image": "http://images.musikki.com/artists/mbid/936addc3-91aa-49de-8ec0-0dc186de151f",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Lodi",
+                            "state": "New Jersey",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": null,
+                            "state": null,
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 101508735,
+            "foreign_ids": [
+                {
+                    "id": "61e144d3-71cc-4f4c-b831-0bc135d18573",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "album",
+            "subtypes": [
+                "compilation"
+            ],
+            "title": "12 Hits From Hell: The MSP Sessions",
+            "cover": "http://images.musikki.com/releases/mbid/61e144d3-71cc-4f4c-b831-0bc135d18573",
+            "date": {
+                "year": 2001,
+                "month": null,
+                "day": null,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100000758,
+                "name": "Caroline Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100009486,
+                    "name": "Misfits",
+                    "image": "http://images.musikki.com/artists/mbid/936addc3-91aa-49de-8ec0-0dc186de151f",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Lodi",
+                            "state": "New Jersey",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": null,
+                            "state": null,
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        }
+    ]
+}

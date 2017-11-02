@@ -1,0 +1,721 @@
+{
+    "summary": {
+        "page": 1,
+        "limit": 10,
+        "total_pages": 330,
+        "result_count": 3297,
+        "errors": []
+    },
+    "results": [
+        {
+            "mkid": 100005381,
+            "foreign_ids": [
+                {
+                    "id": "e0cd33e5-f664-4a21-b7eb-f0b07dd2c1d0",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "person",
+            "alias_references": [
+                {
+                    "name": "Jack McDuff",
+                    "type": null
+                },
+                {
+                    "name": "Eugene McDuffy",
+                    "type": null
+                },
+                {
+                    "name": "Brother Jack McDuff",
+                    "type": null
+                },
+                {
+                    "name": "McDuff, Brother Jack",
+                    "type": null
+                }
+            ],
+            "name": "“Brother” Jack McDuff",
+            "image": "http://images.musikki.com/artists/mbid/e0cd33e5-f664-4a21-b7eb-f0b07dd2c1d0",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/e0cd33e5-f664-4a21-b7eb-f0b07dd2c1d0?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/e0cd33e5-f664-4a21-b7eb-f0b07dd2c1d0?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/e0cd33e5-f664-4a21-b7eb-f0b07dd2c1d0?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "United States",
+                        "code": "US"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": {
+                    "year": 1926,
+                    "month": 9,
+                    "day": 17,
+                    "timestamp": null
+                },
+                "end": {
+                    "year": 2001,
+                    "month": 1,
+                    "day": 23,
+                    "timestamp": null
+                }
+            },
+            "current_labels": [
+                {
+                    "mkid": 100015474,
+                    "name": "Red Records",
+                    "country": {
+                        "name": "Italy",
+                        "code": "IT"
+                    }
+                }
+            ],
+            "genres": [
+                {
+                    "mkid": 100001050,
+                    "name": "Hard Bop"
+                }
+            ]
+        },
+        {
+            "mkid": 101139027,
+            "foreign_ids": [
+                {
+                    "id": "daf5c337-9a3b-493b-823c-13a5f7a6ab50",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "person",
+            "alias_references": [],
+            "name": "“Put” Jackson",
+            "image": "http://images.musikki.com/artists/mbid/daf5c337-9a3b-493b-823c-13a5f7a6ab50",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/daf5c337-9a3b-493b-823c-13a5f7a6ab50?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/daf5c337-9a3b-493b-823c-13a5f7a6ab50?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/daf5c337-9a3b-493b-823c-13a5f7a6ab50?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "United States",
+                        "code": "US"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        },
+        {
+            "mkid": 100020544,
+            "foreign_ids": [
+                {
+                    "id": "8e68819d-71be-4e7d-b41d-f1df81b01d3f",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "person",
+            "alias_references": [
+                {
+                    "name": "50 Cents",
+                    "type": null
+                },
+                {
+                    "name": "Curtis Jackson",
+                    "type": null
+                },
+                {
+                    "name": "Curtis James Jackson III",
+                    "type": null
+                },
+                {
+                    "name": "Jackson, Curtis",
+                    "type": null
+                },
+                {
+                    "name": "Jackson, Curtis James, III",
+                    "type": null
+                }
+            ],
+            "name": "50 Cent",
+            "image": "https://graph.facebook.com/5769333796/picture?width=600",
+            "default_image": {
+                "source": "facebook",
+                "thumbnails": [
+                    {
+                        "url": "https://graph.facebook.com/5769333796/picture?width=600",
+                        "height": 720,
+                        "width": 720,
+                        "size_tag": null
+                    }
+                ],
+                "is_default": true
+            },
+            "location": {
+                "start": {
+                    "street": null,
+                    "city": "South Jamaica",
+                    "state": "New York",
+                    "zip_code": null,
+                    "country": {
+                        "name": "United States",
+                        "code": "US"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "United States",
+                        "code": "US"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": {
+                    "year": 1975,
+                    "month": 7,
+                    "day": 6,
+                    "timestamp": null
+                },
+                "end": null
+            },
+            "current_labels": [
+                {
+                    "mkid": 100000000,
+                    "name": null,
+                    "country": null
+                }
+            ],
+            "genres": [
+                {
+                    "mkid": 100001012,
+                    "name": "Pop Rap"
+                },
+                {
+                    "mkid": 100000989,
+                    "name": "Hardcore Hip Hop"
+                },
+                {
+                    "mkid": 100000354,
+                    "name": "Gangsta Rap"
+                },
+                {
+                    "mkid": 100000349,
+                    "name": "East Coast Hip Hop"
+                },
+                {
+                    "mkid": 100000970,
+                    "name": "Hip Hop"
+                }
+            ]
+        },
+        {
+            "mkid": 101251910,
+            "foreign_ids": [
+                {
+                    "id": "83bf70b3-574f-4efd-bf9f-7ef048170adf",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": null,
+            "alias_references": [
+                {
+                    "name": "Amanda",
+                    "type": null
+                }
+            ],
+            "name": "A. Rose Jackson",
+            "image": "http://images.musikki.com/artists/mbid/83bf70b3-574f-4efd-bf9f-7ef048170adf",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/83bf70b3-574f-4efd-bf9f-7ef048170adf?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/83bf70b3-574f-4efd-bf9f-7ef048170adf?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/83bf70b3-574f-4efd-bf9f-7ef048170adf?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": null,
+                "end": null
+            },
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        },
+        {
+            "mkid": 101187324,
+            "foreign_ids": [
+                {
+                    "id": "d4cac746-0f65-48ba-859b-c45bbe7edb36",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "person",
+            "alias_references": [
+                {
+                    "name": "Alexander Leonard Jackson",
+                    "type": null
+                }
+            ],
+            "name": "A/J Jackson",
+            "image": "http://images.musikki.com/artists/mbid/d4cac746-0f65-48ba-859b-c45bbe7edb36",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/d4cac746-0f65-48ba-859b-c45bbe7edb36?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/d4cac746-0f65-48ba-859b-c45bbe7edb36?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/d4cac746-0f65-48ba-859b-c45bbe7edb36?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": {
+                    "street": null,
+                    "city": "Los Angeles",
+                    "state": "California",
+                    "zip_code": null,
+                    "country": {
+                        "name": "United States",
+                        "code": "US"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        },
+        {
+            "mkid": 101276613,
+            "foreign_ids": [
+                {
+                    "id": "134150aa-338b-42fe-a0bd-f8e5a86fd1c1",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "person",
+            "alias_references": [],
+            "name": "Aaron Jackson",
+            "image": "https://graph.facebook.com/226177927451138/picture?width=600",
+            "default_image": {
+                "source": "facebook",
+                "thumbnails": [
+                    {
+                        "url": "https://graph.facebook.com/226177927451138/picture?width=600",
+                        "height": 720,
+                        "width": 720,
+                        "size_tag": null
+                    }
+                ],
+                "is_default": true
+            },
+            "location": {
+                "start": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "United States",
+                        "code": "US"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "United States",
+                        "code": "US"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": {
+                    "year": 1990,
+                    "month": null,
+                    "day": null,
+                    "timestamp": null
+                },
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        },
+        {
+            "mkid": 101424661,
+            "foreign_ids": [
+                {
+                    "id": "6f786c85-aa42-475c-ab22-88b42ac40c86",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": null,
+            "alias_references": [],
+            "name": "Adam Jack",
+            "image": "http://images.musikki.com/artists/mbid/6f786c85-aa42-475c-ab22-88b42ac40c86",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/6f786c85-aa42-475c-ab22-88b42ac40c86?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/6f786c85-aa42-475c-ab22-88b42ac40c86?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/6f786c85-aa42-475c-ab22-88b42ac40c86?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": null,
+                "end": null
+            },
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        },
+        {
+            "mkid": 100738740,
+            "foreign_ids": [
+                {
+                    "id": "3fc5a9e3-6d66-4946-a57f-99fe2a572176",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "person",
+            "alias_references": [],
+            "name": "Adam Jackson",
+            "image": "http://images.musikki.com/artists/mbid/3fc5a9e3-6d66-4946-a57f-99fe2a572176",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/3fc5a9e3-6d66-4946-a57f-99fe2a572176?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/3fc5a9e3-6d66-4946-a57f-99fe2a572176?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/3fc5a9e3-6d66-4946-a57f-99fe2a572176?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "United Kingdom",
+                        "code": "GB"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        },
+        {
+            "mkid": 100400204,
+            "foreign_ids": [
+                {
+                    "id": "0421ba90-d14e-427d-a8a0-8f8751c502bc",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "person",
+            "alias_references": [],
+            "name": "Adam Jackson",
+            "image": "http://images.musikki.com/artists/mbid/0421ba90-d14e-427d-a8a0-8f8751c502bc",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/0421ba90-d14e-427d-a8a0-8f8751c502bc?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/0421ba90-d14e-427d-a8a0-8f8751c502bc?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/0421ba90-d14e-427d-a8a0-8f8751c502bc?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "United States",
+                        "code": "US"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        },
+        {
+            "mkid": 100413517,
+            "foreign_ids": [
+                {
+                    "id": "8e053842-e767-4be7-a126-4b780a87fa6b",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "person",
+            "alias_references": [],
+            "name": "Adrian Jackson",
+            "image": "http://images.musikki.com/artists/mbid/8e053842-e767-4be7-a126-4b780a87fa6b",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/8e053842-e767-4be7-a126-4b780a87fa6b?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/8e053842-e767-4be7-a126-4b780a87fa6b?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/8e053842-e767-4be7-a126-4b780a87fa6b?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "United Kingdom",
+                        "code": "GB"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": {
+                    "year": 1970,
+                    "month": 6,
+                    "day": 12,
+                    "timestamp": null
+                },
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        }
+    ]
+}

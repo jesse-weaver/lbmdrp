@@ -1,0 +1,785 @@
+{
+    "summary": {
+        "page": 1,
+        "limit": 10,
+        "total_pages": 3,
+        "result_count": 21,
+        "errors": []
+    },
+    "results": [
+        {
+            "mkid": 101790077,
+            "foreign_ids": [
+                {
+                    "id": "3e9c58bb-a8d0-4f04-b2b5-03f5033b47ee",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "single",
+            "subtypes": [
+                "studio"
+            ],
+            "title": "Battle Cry",
+            "cover": "http://images.musikki.com/releases/mbid/3e9c58bb-a8d0-4f04-b2b5-03f5033b47ee",
+            "date": {
+                "year": 2017,
+                "month": 4,
+                "day": 7,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100022384,
+                "name": "Third Man Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100145263,
+                    "name": "Jack White",
+                    "image": "http://images.musikki.com/artists/mbid/3ae2fb37-8a23-429d-9920-bac811c4fc22",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Detroit",
+                            "state": "Michigan",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": "Nashville",
+                            "state": "Tennessee",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 101697403,
+            "foreign_ids": [
+                {
+                    "id": "d733d9b8-d5ea-4227-8629-5d7184f8f6ab",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "album",
+            "subtypes": [
+                "compilation"
+            ],
+            "title": "Acoustic Recordings 1998–2016",
+            "cover": "http://images.musikki.com/releases/mbid/d733d9b8-d5ea-4227-8629-5d7184f8f6ab",
+            "date": {
+                "year": 2016,
+                "month": 9,
+                "day": 9,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100022384,
+                "name": "Third Man Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100145263,
+                    "name": "Jack White",
+                    "image": "http://images.musikki.com/artists/mbid/3ae2fb37-8a23-429d-9920-bac811c4fc22",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Detroit",
+                            "state": "Michigan",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": "Nashville",
+                            "state": "Tennessee",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": [
+                {
+                    "mkid": 100000413,
+                    "name": "Electronic"
+                },
+                {
+                    "mkid": 100000639,
+                    "name": "Noise"
+                }
+            ]
+        },
+        {
+            "mkid": 101631849,
+            "foreign_ids": [
+                {
+                    "id": "7de62fc2-c4db-462f-873e-d1c21457e869",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "single",
+            "subtypes": [
+                "soundtrack"
+            ],
+            "title": "You Are the Sunshine of My Life",
+            "cover": "http://images.musikki.com/releases/mbid/7de62fc2-c4db-462f-873e-d1c21457e869",
+            "date": {
+                "year": 2016,
+                "month": 3,
+                "day": 1,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100022384,
+                "name": "Third Man Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": {
+                "mkid": 101706505,
+                "name": "Jack White and The Electric Mayhem"
+            },
+            "artist_references": [
+                {
+                    "mkid": 100145263,
+                    "name": "Jack White",
+                    "image": "http://images.musikki.com/artists/mbid/3ae2fb37-8a23-429d-9920-bac811c4fc22",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Detroit",
+                            "state": "Michigan",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": "Nashville",
+                            "state": "Tennessee",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                },
+                {
+                    "mkid": 100209535,
+                    "name": "The Electric Mayhem",
+                    "image": "http://images.musikki.com/artists/mbid/edc390be-21ae-4d6f-bd6d-6484a3d51101",
+                    "location": {
+                        "start": null,
+                        "current": null,
+                        "end": null
+                    }
+                }
+            ],
+            "genres": [
+                {
+                    "mkid": 100000095,
+                    "name": "Choral"
+                }
+            ]
+        },
+        {
+            "mkid": 101495103,
+            "foreign_ids": [
+                {
+                    "id": "01222cf1-1507-4dfb-b0e2-e6287a0c27dc",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "single",
+            "subtypes": [
+                "studio"
+            ],
+            "title": "That Black Bat Licorice",
+            "cover": "http://images.musikki.com/releases/mbid/01222cf1-1507-4dfb-b0e2-e6287a0c27dc",
+            "date": {
+                "year": 2015,
+                "month": 2,
+                "day": 17,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100022384,
+                "name": "Third Man Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100145263,
+                    "name": "Jack White",
+                    "image": "http://images.musikki.com/artists/mbid/3ae2fb37-8a23-429d-9920-bac811c4fc22",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Detroit",
+                            "state": "Michigan",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": "Nashville",
+                            "state": "Tennessee",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 101690379,
+            "foreign_ids": [
+                {
+                    "id": "d9be68ea-50cb-4046-bcd7-7a5bc75c3b29",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "single",
+            "subtypes": [
+                "studio"
+            ],
+            "title": "Would You Fight for My Love?",
+            "cover": "http://images.musikki.com/releases/mbid/d9be68ea-50cb-4046-bcd7-7a5bc75c3b29",
+            "date": {
+                "year": 2014,
+                "month": 11,
+                "day": 5,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100022384,
+                "name": "Third Man Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100145263,
+                    "name": "Jack White",
+                    "image": "http://images.musikki.com/artists/mbid/3ae2fb37-8a23-429d-9920-bac811c4fc22",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Detroit",
+                            "state": "Michigan",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": "Nashville",
+                            "state": "Tennessee",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 101369444,
+            "foreign_ids": [
+                {
+                    "id": "67e28d5b-f68e-4349-8e43-76189c90be65",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "album",
+            "subtypes": [
+                "studio"
+            ],
+            "title": "Lazaretto",
+            "cover": "http://images.musikki.com/releases/mbid/67e28d5b-f68e-4349-8e43-76189c90be65",
+            "date": {
+                "year": 2014,
+                "month": 6,
+                "day": 6,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100022384,
+                "name": "Third Man Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100145263,
+                    "name": "Jack White",
+                    "image": "http://images.musikki.com/artists/mbid/3ae2fb37-8a23-429d-9920-bac811c4fc22",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Detroit",
+                            "state": "Michigan",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": "Nashville",
+                            "state": "Tennessee",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 101456225,
+            "foreign_ids": [
+                {
+                    "id": "9224000a-c062-4b1d-a5c9-be012d6d416e",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "single",
+            "subtypes": [],
+            "title": "Lazaretto Demos",
+            "cover": "http://images.musikki.com/releases/mbid/9224000a-c062-4b1d-a5c9-be012d6d416e",
+            "date": {
+                "year": 2014,
+                "month": 6,
+                "day": null,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100022384,
+                "name": "Third Man Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100145263,
+                    "name": "Jack White",
+                    "image": "http://images.musikki.com/artists/mbid/3ae2fb37-8a23-429d-9920-bac811c4fc22",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Detroit",
+                            "state": "Michigan",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": "Nashville",
+                            "state": "Tennessee",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 101373426,
+            "foreign_ids": [
+                {
+                    "id": "4ba9a80f-4996-4109-8e6a-8cdcc9a0992f",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "single",
+            "subtypes": [
+                "studio"
+            ],
+            "title": "Lazaretto",
+            "cover": "http://images.musikki.com/releases/mbid/4ba9a80f-4996-4109-8e6a-8cdcc9a0992f",
+            "date": {
+                "year": 2014,
+                "month": 4,
+                "day": 22,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100022384,
+                "name": "Third Man Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100145263,
+                    "name": "Jack White",
+                    "image": "http://images.musikki.com/artists/mbid/3ae2fb37-8a23-429d-9920-bac811c4fc22",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Detroit",
+                            "state": "Michigan",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": "Nashville",
+                            "state": "Tennessee",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 101388833,
+            "foreign_ids": [
+                {
+                    "id": "e35d6e58-3eae-4d4f-877d-bfe6077431ea",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "single",
+            "subtypes": [
+                "live"
+            ],
+            "title": "Lazaretto (live at Third Man Records)",
+            "cover": "http://images.musikki.com/releases/mbid/e35d6e58-3eae-4d4f-877d-bfe6077431ea",
+            "date": {
+                "year": 2014,
+                "month": 4,
+                "day": 19,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100022384,
+                "name": "Third Man Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": null,
+            "artist_references": [
+                {
+                    "mkid": 100145263,
+                    "name": "Jack White",
+                    "image": "http://images.musikki.com/artists/mbid/3ae2fb37-8a23-429d-9920-bac811c4fc22",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Detroit",
+                            "state": "Michigan",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": "Nashville",
+                            "state": "Tennessee",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 101508608,
+            "foreign_ids": [
+                {
+                    "id": "699a3940-e2f2-4aef-92ee-69bbbbc1a2b8",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "single",
+            "subtypes": [],
+            "title": "Steady, as She Goes",
+            "cover": "http://images.musikki.com/releases/mbid/699a3940-e2f2-4aef-92ee-69bbbbc1a2b8",
+            "date": {
+                "year": 2013,
+                "month": 3,
+                "day": null,
+                "timestamp": null
+            },
+            "main_label": {
+                "mkid": 100022384,
+                "name": "Third Man Records",
+                "country": {
+                    "name": "United States",
+                    "code": "US"
+                }
+            },
+            "collaboration_reference": {
+                "mkid": 101453083,
+                "name": "Brendan Benson & Jack White"
+            },
+            "artist_references": [
+                {
+                    "mkid": 100050256,
+                    "name": "Brendan Benson",
+                    "image": "http://images.musikki.com/artists/mbid/f1999057-4be4-40f5-bfc9-c33b362a94e5",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Royal Oak",
+                            "state": "Michigan",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": null,
+                            "state": null,
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                },
+                {
+                    "mkid": 100145263,
+                    "name": "Jack White",
+                    "image": "http://images.musikki.com/artists/mbid/3ae2fb37-8a23-429d-9920-bac811c4fc22",
+                    "location": {
+                        "start": {
+                            "street": null,
+                            "city": "Detroit",
+                            "state": "Michigan",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "current": {
+                            "street": null,
+                            "city": "Nashville",
+                            "state": "Tennessee",
+                            "zip_code": null,
+                            "country": {
+                                "name": "United States",
+                                "code": "US"
+                            },
+                            "geolocation": {
+                                "lat": null,
+                                "lng": null
+                            },
+                            "description": null
+                        },
+                        "end": null
+                    }
+                }
+            ],
+            "genres": []
+        }
+    ]
+}

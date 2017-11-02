@@ -1,0 +1,503 @@
+{
+    "summary": {
+        "page": 1,
+        "limit": 10,
+        "total_pages": 1,
+        "result_count": 7,
+        "errors": []
+    },
+    "results": [
+        {
+            "mkid": 100009486,
+            "foreign_ids": [
+                {
+                    "id": "936addc3-91aa-49de-8ec0-0dc186de151f",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "group",
+            "alias_references": [
+                {
+                    "name": "The Misfits",
+                    "type": null
+                }
+            ],
+            "name": "Misfits",
+            "image": "https://graph.facebook.com/67577810787/picture?width=600",
+            "default_image": {
+                "source": "facebook",
+                "thumbnails": [
+                    {
+                        "url": "https://graph.facebook.com/67577810787/picture?width=600",
+                        "height": 665,
+                        "width": 610,
+                        "size_tag": null
+                    }
+                ],
+                "is_default": true
+            },
+            "location": {
+                "start": {
+                    "street": null,
+                    "city": "Lodi",
+                    "state": "New Jersey",
+                    "zip_code": null,
+                    "country": {
+                        "name": "United States",
+                        "code": "US"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "United States",
+                        "code": "US"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": {
+                    "year": 1977,
+                    "month": 2,
+                    "day": null,
+                    "timestamp": null
+                },
+                "end": null
+            },
+            "current_labels": [
+                {
+                    "mkid": 100001022,
+                    "name": "Misfits Records",
+                    "country": {
+                        "name": "United States",
+                        "code": "US"
+                    }
+                }
+            ],
+            "genres": [
+                {
+                    "mkid": 100002384,
+                    "name": "Hardcore Punk"
+                },
+                {
+                    "mkid": 100002404,
+                    "name": "Horror Punk"
+                }
+            ]
+        },
+        {
+            "mkid": 100255229,
+            "foreign_ids": [
+                {
+                    "id": "53e2864b-d76d-4ea9-b6e9-04a5d94ab200",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "group",
+            "alias_references": [
+                {
+                    "name": "MOS.",
+                    "type": null
+                },
+                {
+                    "name": "M.O.S..",
+                    "type": null
+                }
+            ],
+            "name": "Misfits of Science",
+            "image": "http://images.musikki.com/artists/mbid/53e2864b-d76d-4ea9-b6e9-04a5d94ab200",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/53e2864b-d76d-4ea9-b6e9-04a5d94ab200?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/53e2864b-d76d-4ea9-b6e9-04a5d94ab200?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/53e2864b-d76d-4ea9-b6e9-04a5d94ab200?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "New Zealand",
+                        "code": "NZ"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "current_labels": [
+                {
+                    "mkid": 100008535,
+                    "name": "BMG New Zealand",
+                    "country": {
+                        "name": "New Zealand",
+                        "code": "NZ"
+                    }
+                }
+            ],
+            "genres": []
+        },
+        {
+            "mkid": 101059529,
+            "foreign_ids": [
+                {
+                    "id": "0d7ddaf8-3316-42b4-83b4-cace823434b5",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "group",
+            "alias_references": [],
+            "name": "Misfits Of Zion",
+            "image": "http://images.musikki.com/artists/mbid/0d7ddaf8-3316-42b4-83b4-cace823434b5",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/0d7ddaf8-3316-42b4-83b4-cace823434b5?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/0d7ddaf8-3316-42b4-83b4-cace823434b5?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/0d7ddaf8-3316-42b4-83b4-cace823434b5?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "Australia",
+                        "code": "AU"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        },
+        {
+            "mkid": 100431011,
+            "foreign_ids": [
+                {
+                    "id": "aec8e038-59dc-440d-a802-d20c54bdcc5c",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "group",
+            "alias_references": [],
+            "name": "The Misfits",
+            "image": "http://images.musikki.com/artists/mbid/aec8e038-59dc-440d-a802-d20c54bdcc5c",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/aec8e038-59dc-440d-a802-d20c54bdcc5c?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/aec8e038-59dc-440d-a802-d20c54bdcc5c?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/aec8e038-59dc-440d-a802-d20c54bdcc5c?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "United States",
+                        "code": "US"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        },
+        {
+            "mkid": 100494316,
+            "foreign_ids": [
+                {
+                    "id": "d83c1325-4a75-4101-98cf-e8b8dc8fa3c3",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "group",
+            "alias_references": [
+                {
+                    "name": "DJ Marcello presents The Misfits",
+                    "type": null
+                }
+            ],
+            "name": "The Misfits",
+            "image": "http://images.musikki.com/artists/mbid/d83c1325-4a75-4101-98cf-e8b8dc8fa3c3",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/d83c1325-4a75-4101-98cf-e8b8dc8fa3c3?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/d83c1325-4a75-4101-98cf-e8b8dc8fa3c3?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/d83c1325-4a75-4101-98cf-e8b8dc8fa3c3?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "Netherlands",
+                        "code": "NL"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        },
+        {
+            "mkid": 100911684,
+            "foreign_ids": [
+                {
+                    "id": "fa57cfe8-473b-4cec-ba89-53b1951740e8",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "group",
+            "alias_references": [],
+            "name": "The Misfits",
+            "image": "http://images.musikki.com/artists/mbid/fa57cfe8-473b-4cec-ba89-53b1951740e8",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/fa57cfe8-473b-4cec-ba89-53b1951740e8?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/fa57cfe8-473b-4cec-ba89-53b1951740e8?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/fa57cfe8-473b-4cec-ba89-53b1951740e8?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "Netherlands",
+                        "code": "NL"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": null,
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        },
+        {
+            "mkid": 101429456,
+            "foreign_ids": [
+                {
+                    "id": "a1415939-e62d-40d9-bf5e-7566ded507a8",
+                    "service": "musicbrainz"
+                }
+            ],
+            "type": "group",
+            "alias_references": [],
+            "name": "The Misfits",
+            "image": "http://images.musikki.com/artists/mbid/a1415939-e62d-40d9-bf5e-7566ded507a8",
+            "default_image": {
+                "source": "musikki",
+                "thumbnails": [
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/a1415939-e62d-40d9-bf5e-7566ded507a8?w=200",
+                        "height": null,
+                        "width": 200,
+                        "size_tag": "small"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/a1415939-e62d-40d9-bf5e-7566ded507a8?w=400",
+                        "height": null,
+                        "width": 400,
+                        "size_tag": "medium"
+                    },
+                    {
+                        "url": "http://images.musikki.com/artists/mbid/a1415939-e62d-40d9-bf5e-7566ded507a8?w=600",
+                        "height": null,
+                        "width": 600,
+                        "size_tag": "large"
+                    }
+                ],
+                "is_default": false
+            },
+            "location": {
+                "start": null,
+                "current": {
+                    "street": null,
+                    "city": null,
+                    "state": null,
+                    "zip_code": null,
+                    "country": {
+                        "name": "Belgium",
+                        "code": "BE"
+                    },
+                    "geolocation": {
+                        "lat": null,
+                        "lng": null
+                    },
+                    "description": null
+                },
+                "end": null
+            },
+            "dates": {
+                "start": {
+                    "year": 1963,
+                    "month": null,
+                    "day": null,
+                    "timestamp": null
+                },
+                "end": null
+            },
+            "current_labels": [],
+            "genres": []
+        }
+    ]
+}
