@@ -12,10 +12,11 @@ body {
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   grid-template-rows: minmax(10%, auto);
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
   grid-template-areas:
-  "header header header search search"
-  "newrelease newrelease newrelease newrelease newrelease"
+  "header header header header header"
+  "search search search search search"
+  /*"newrelease newrelease newrelease newrelease newrelease"
   "news news news news news"
-  "footer footer footer footer footer"
+  "footer footer footer footer footer"*/
 }
