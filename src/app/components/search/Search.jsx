@@ -22,17 +22,17 @@ export default class Search extends Component {
     } = this.props;
 
     return (
-      <div className="search">
+      <div className="search-box">
         <form onSubmit={this.handleSubmit}>
           <input
-            className="searchbox"
+            className="search-input"
             name="q"
             type="text"
             size="40"
             placeholder="Search Artists..."
             ref={(input) => { this.searchInput = input; }}
           />
-          <input type="submit" className="searchbutton" name="search" value="Search" />
+          <input type="submit" className="search-button" name="search" value="Search" />
         </form>
       </div>
     );

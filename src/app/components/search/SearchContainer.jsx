@@ -34,7 +34,7 @@ export default class SearchContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="search">
         <Search
           handleSearch={this.handleSearch}
         />
