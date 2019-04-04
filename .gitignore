@@ -22,4 +22,5 @@ node_modules
 
 # IDE / OS specific files
 .idea/
+.vscode/
 .DS_Store

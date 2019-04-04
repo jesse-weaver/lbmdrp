@@ -65,7 +65,11 @@ exports.loadJavaScript = ({ include, exclude }) => ({
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['es2015', 'react', 'stage-0'],
+          presets: [
+            'babel-preset-es2015',
+            'babel-preset-react',
+            'babel-preset-stage-0',
+          ].map(require.resolve),
         },
       },
     ],

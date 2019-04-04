@@ -5,7 +5,7 @@ import logger from 'debug';
 import http from 'http';
 import app from './express';
 
-const debug = logger('lmbdrp:server');
+const debug = logger('lbmdrop:server');
 const server = http.createServer(app);
 
 
