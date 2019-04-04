@@ -2,19 +2,21 @@ import request from 'request';
 import { get } from 'lodash';
 import logger from 'debug';
 
-const debug = logger('controllers:api:artist');
-const baseUrl = 'https://music-api.musikki.com/v1';
+const debug = logger('lbmdrop:controllers:api:artist');
+const baseUrl = 'https://api.spotify.com/v1';
 
 export default class Artist {
 
   static searchArtists(req, res) {
     const query = get(req, 'query.q', '');
-    const requestUrl = `${baseUrl}/artists/?q=${query}&limit=50`;
+    const requestUrl = `${baseUrl}/search/?q=${query}&type=artist&limit=25`;
 
     const requestOptions = {
       url: requestUrl,
       json: true,
-      headers: res.locals.apiKeys.musikki,
+      headers: {
+        Authorization: res.locals.requestToken,
+      },
     };
 
     const callback = (err, response, body) => {
@@ -26,11 +28,13 @@ export default class Artist {
       if (response.statusCode !== 200) {
         debug(`requestUrl: ${requestOptions.url}`);
         debug(`bad response man: ${response.statusCode}`);
+        res.json({ error: 'bad response' });
       }
-      const results = body.results.map(result => ({
-        mkid: result.mkid,
-        name: result.name,
-        image: result.image,
+
+      const results = body.artists.items.map(artist => ({
+        mkid: artist.id,
+        name: artist.name,
+        image: artist.images && artist.images[0] && artist.images[0].url || '',
       }));
 
       res.json(results);

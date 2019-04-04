@@ -44,6 +44,11 @@ export default class Search extends Component {
           ref={(input) => { this.searchInput = input; }}
         />
         <button className="searchbutton" name="search" value="search" onClick={this.handleClick}/>
+        {this.state.results.map(item => (
+          <div>{item.name}</div>
+        ))
+
+        }
       </div>
     );
   }
