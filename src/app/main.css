@@ -6,3 +6,28 @@ body {
   background-size: cover;
   color: #fff;
 }
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 100px auto;
+  grid-template-areas: 
+    "h h h h h h h h h h h h"
+    ". . . sb sb sb sb sb sb . . ."
+    "sr sr sr sr sr sr sr sr sr sr sr sr"
+}
+
+.header {
+  grid-area: h;
+  /* background-color: red; */
+}
+
+.search-bar {
+  grid-area: sb;
+  /* background-color: blue; */
+}
+
+.search-results {
+  grid-area: sr;
+  /* background-color: green; */
+}
