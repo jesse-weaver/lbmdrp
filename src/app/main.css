@@ -9,6 +9,7 @@ body {
 
 .main {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto 100px auto;
   grid-template-areas: 

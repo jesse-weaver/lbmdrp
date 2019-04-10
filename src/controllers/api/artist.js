@@ -26,8 +26,9 @@ export default class Artist {
       }
 
       if (response.statusCode !== 200) {
+        debug(`bad response from api/artist: ${response.statusCode}`);
         debug(`requestUrl: ${requestOptions.url}`);
-        debug(`bad response man: ${response.statusCode}`);
+        debug(`response body:`, response.body);
         res.json({ error: 'bad response' });
       }
 
@@ -36,7 +37,6 @@ export default class Artist {
         name: artist.name,
         image: artist.images && artist.images[0] && artist.images[0].url || '',
       }));
-
       res.json(results);
     };
 
