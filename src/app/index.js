@@ -1,4 +1,4 @@
-import component from './component';
+import Component from './Component.jsx';
 import './main.css';
 
-component();
+Component();

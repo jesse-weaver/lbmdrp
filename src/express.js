@@ -9,7 +9,6 @@ import favicon from 'express-favicon';
 // import { ErrorHandlerMiddleware } from './middleware/errorHandlerMiddleware';
 import apiKeyMiddleware from './middleware/apiKeyMiddleware';
 
-import Index from './controllers/index';
 import ArtistClient from './controllers/api/artist';
 
 
@@ -34,8 +33,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static('public'));
-
 app.use('/api/artist', ArtistClient.searchArtists);
-app.use('/', Index.home);
 
 module.exports = app;

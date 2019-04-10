@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
-// import { fetch } from 'fetch';
-import search from './search.css';
+import React, { Component } from 'react';
+import searchCss from './SearchBar.css';
 
-export default class Search extends Component {
+export default class SearchBar extends Component {
 
   constructor(props) {
     super(props);
@@ -36,14 +35,14 @@ export default class Search extends Component {
     return (
       <div className="search">
         <input
-          className="searchbox"
+          className="search-box"
           name="q"
           type="text"
-          size="40"
+          size="20"
           placeholder="Search Artists..."
           ref={(input) => { this.searchInput = input; }}
         />
-        <button className="searchbutton" name="search" value="search" onClick={this.handleClick}/>
+        <button className="search-button" name="search" value="search" onClick={this.handleClick}>Search</button>
         {this.state.results.map(item => (
           <div>{item.name}</div>
         ))

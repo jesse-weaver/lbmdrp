@@ -6,15 +6,14 @@ import apiKeys from '../../apiKeys.json';
 const app = express();
 const debug = logger('lbmdrop:middleware');
 
-
 export default (req, res, next) => {
   if (app.locals.requestToken) {
     res.locals.requestToken = app.locals.requestToken;
     return next();
   }
   const requestKey = `${apiKeys.spotify.clientId}:${apiKeys.spotify.secret}`;
-  const buffer = new Buffer(requestKey);
-  const encoded = buffer.toString('base64');
+  const encoded = Buffer.from(requestKey).toString('base64');
+  console.log('request token: ', encoded);
 
   const requestOptions = {
     url: 'https://accounts.spotify.com/api/token',
@@ -29,10 +28,9 @@ export default (req, res, next) => {
   };
 
   request(requestOptions, (err, response, body) => {
+    if (err) throw err;
     app.locals.requestToken = `Bearer ${body.access_token}`;
     res.locals.requestToken = app.locals.requestToken;
-    debug(body);
+    next();
   });
-
-  next();
 };
