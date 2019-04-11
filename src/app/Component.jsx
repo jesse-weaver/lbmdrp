@@ -14,7 +14,7 @@ const PageLayout = function pageLayout() {
         <SearchBar />
       </div>
       <div className="search-results">
-        <SearchResults results={[]} />
+        <SearchResults />
       </div>
     </div>
   );

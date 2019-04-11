@@ -1,5 +1,32 @@
-.header {
-  font-size: 5em;
-  text-align: center;
-  font-family: 'Titillium Web', sans-serif;
+
+.search-results {
+  list-style-type: none;
+  list-style: none;
+  width: 60%;
+}
+
+.search-result-item {
+  border: 1px solid white;
+  margin-top: 10px;
+  background-color: 	rgb(255,255,255, .7);
+  color: #333333;
+}
+
+.search-result-item:hover {
+  background-color: 	rgb(255,255,255, .9);
+  color: #545454;
+}
+
+.artist-thumbnail {
+  margin-right: 10px;
+}
+
+.artist-thumbnail > img {
+  width: 30px;
+  height: 30px;
+}
+
+.placeholder-thumbnail {
+  margin-right: 30px;
+  background-color: gray;
 }
