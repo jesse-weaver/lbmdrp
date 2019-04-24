@@ -5,7 +5,7 @@ import searchResultsCss from './SearchResults.css';
 export default class SearchResults extends Component {
 
   static propTypes = {
-    results: PropTypes.array.isRequired,
+    searchResults: PropTypes.array.isRequired,
   }
 
   constructor(props) {
@@ -16,8 +16,8 @@ export default class SearchResults extends Component {
     const { results } = this.props;
     return (
       <ul className="search-results">
-        {this.props.results.map(item => (
-          <li className="search-result-item">
+        {this.props.searchResults.map(item => (
+          <li className="search-result-item" key={item.mkid}>
             <span className="artist-thumbnail">
               {item.image ? (
                 <img src={item.image} />
@@ -33,7 +33,7 @@ export default class SearchResults extends Component {
   }
 
   static defaultProps = {
-    results: [
+    searchResults: [
       {
       "mkid": "0q32a3GRCjDxS4EIrC7YVY",
       "name": "The Sword",
