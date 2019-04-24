@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import searchCss from './SearchBar.css';
-import { SEARCH_RESULTS_SUCCESS } from '../../../actions';
+import { SEARCH_RESULTS_SUCCESS } from '../../../ducks';
 
 export default class SearchBar extends Component {
   constructor(props) {
@@ -51,6 +51,7 @@ export default class SearchBar extends Component {
           type="text"
           size="20"
           placeholder="Search Artists..."
+          autoComplete="off"
           ref={(input) => { this.searchInput = input; }}
           onKeyDown={this.handleKeyDown}
         />

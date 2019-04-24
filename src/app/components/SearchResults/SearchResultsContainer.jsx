@@ -4,7 +4,6 @@ import SearchResults from './SearchResults.jsx';
 
 
 const mapStateToProps = (state) => {
-  console.log('state: ', state);
   return {
     searchResults: state.searchResults,
   };

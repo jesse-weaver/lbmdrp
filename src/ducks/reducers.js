@@ -1,6 +1,6 @@
 import {
   SEARCH_RESULTS_SUCCESS
-} from '../actions';
+} from './actions';
 
 const initialState = {
   searchResults: [],
