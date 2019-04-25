@@ -1,0 +1,24 @@
+.main {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 100px auto;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "sb sb sb sb sb sb sb sb sb sb sb sb"
+    "sr sr sr sr sr sr sr sr sr sr sr sr";
+  color: #fff;
+  font-family: 'Roboto',sans-serif;
+}
+
+.header {
+  grid-area: h;
+}
+
+.search-bar {
+  grid-area: sb;
+}
+
+.search-results {
+  grid-area: sr;
+}

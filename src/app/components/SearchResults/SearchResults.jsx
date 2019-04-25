@@ -22,7 +22,9 @@ export default class SearchResults extends Component {
               {item.image ? (
                 <img src={item.image} />
               ) : (
-                <span className="placeholder-thumbnail"></span>
+                <span className="placeholder-thumbnail">
+                  <img src="/images/searchResultRecord.png"/>
+                </span>
               )}
             </span>
             {item.name}
