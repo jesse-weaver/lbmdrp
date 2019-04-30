@@ -33,6 +33,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static('public'));
 app.use('/api/artist', apiKeyMiddleware);
+app.use('/api/artist-details/:artistId', apiKeyMiddleware);
 app.use('/api/artist', ArtistClient.searchArtists);
+app.use('/api/artist-details/:artistId', ArtistClient.getArtistDetails);
 
 module.exports = app;

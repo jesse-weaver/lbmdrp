@@ -42,4 +42,40 @@ export default class Artist {
 
     request(requestOptions, callback);
   }
+
+  static getArtistDetails(req, res) {
+    const artistId = get(req.params, 'artistId', '');
+    // https: //api.spotify.com/v1/{id}
+    const requestUrl = `${baseUrl}/artists/${artistId}`;
+    debug('requestURL: ', requestUrl);
+
+    const requestOptions = {
+      url: requestUrl,
+      json: true,
+      headers: {
+        Authorization: res.locals.requestToken,
+      },
+    };
+
+    const callback = (err, response, body) => {
+      if (err) {
+        debug('Error while trying to retrieve artists search');
+        throw (err);
+      }
+
+      if (response.statusCode !== 200) {
+        debug(`bad response from api/artist: ${response.statusCode}`);
+        debug(`requestUrl: ${requestOptions.url}`);
+        debug(`response body:`, response.body);
+        res.json({
+          error: 'bad response',
+        });
+        return;
+      }
+      console.log(body);
+      res.json(body);
+    };
+
+    request(requestOptions, callback);
+  }
 }

@@ -1,7 +1,9 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import Header from '../Header/Header.jsx';
 import SearchBar from '../SearchBar/SearchBarContainer.jsx';
 import SearchResults from '../SearchResults/SearchResultsContainer.jsx';
+import ArtistDetails from '../ArtistDetails/ArtistDetailsContainer.jsx';
 import layoutCss from './Layout.css';
 
 export default function pageLayout() {
@@ -14,7 +16,8 @@ export default function pageLayout() {
         <SearchBar />
       </div>
       <div className="search-results">
-        <SearchResults />
+        <Route exact path="/" component={SearchResults} />
+        <Route exact path="/artist/:id" component={ArtistDetails} />
       </div>
     </div>
   );

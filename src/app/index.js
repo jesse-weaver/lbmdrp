@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import { reducers } from '../ducks';
 import Layout from './components/Layout/Layout.jsx';
@@ -15,7 +16,9 @@ const store = createStore(
 
 render(
   <Provider store={store}>
-    <Layout />
+    <BrowserRouter>
+      <Layout />
+    </BrowserRouter>
   </Provider>,
   document.getElementById('app'),
 );
