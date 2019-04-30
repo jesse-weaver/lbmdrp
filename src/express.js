@@ -26,13 +26,15 @@ const app = express();
 //   publicPath: "/"
 // }));
 
-app.use(apiKeyMiddleware);
 app.use(favicon('public/images/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static('public'));
+app.use('/api/artist', apiKeyMiddleware);
+app.use('/api/artist-details/:artistId', apiKeyMiddleware);
 app.use('/api/artist', ArtistClient.searchArtists);
+app.use('/api/artist-details/:artistId', ArtistClient.getArtistDetails);
 
 module.exports = app;

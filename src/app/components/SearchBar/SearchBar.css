@@ -1,8 +1,15 @@
 .search-box, .search-button {
-  font-size: 25px;
-  text-align: center;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border-color: black;
+  font-size: 50px;
+  text-align: center; 
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border-color: white;
+}
+
+.search-button {
+  background: none;
+  color: white;
+  font-size: 50px;
+  border: none;
 }

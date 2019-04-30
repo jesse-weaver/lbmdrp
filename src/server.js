@@ -5,7 +5,7 @@ import logger from 'debug';
 import http from 'http';
 import app from './express';
 
-const debug = logger('lmbdrp:server');
+const debug = logger('lbmdrop:server');
 const server = http.createServer(app);
 
 
@@ -34,11 +34,7 @@ const port = normalizePort(process.env.PORT || '3030');
  * Event listener for HTTP server "listening" event.
  */
 function onListening() {
-  const addr = server.address();
-  const bind = typeof addr === 'string'
-    ? `pipe ${addr}`
-    : `port ${addr.port}`;
-  debug(`Listening on ${bind}`);
+  debug(`Listening on http://localhost:${port}`);
 }
 
 function onError(error) {

@@ -1,5 +1,35 @@
-.header {
-  font-size: 5em;
-  text-align: center;
-  font-family: 'Titillium Web', sans-serif;
+
+.search-results {
+  list-style-type: none;
+  list-style: none;
+   width: 100%; 
+}
+
+.search-result-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin: 35px;
+  font-size: 3em;
+  color: white;
+}
+
+.search-result-item:hover {
+  background-color: 	rgb(255,255,255, .9);
+  color: #545454;
+}
+
+.artist-thumbnail {
+  margin-right: 25px;
+}
+
+.artist-thumbnail > img, .placeholder-thumbnail > img {
+  width: 95px;
+  height: 95px;
+  background: white;
+}
+
+.placeholder-thumbnail {
+
 }
