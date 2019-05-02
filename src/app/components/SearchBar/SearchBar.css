@@ -1,6 +1,8 @@
-.search-box, .search-button {
-  font-size: 50px;
-  text-align: center; 
+/* mobile */
+.search-box,
+.search-button {
+  font-size: 40px;
+  text-align: center;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -10,6 +12,42 @@
 .search-button {
   background: none;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   border: none;
 }
+
+/* ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .search-box {
+    font-size: 35px;
+  
+  }
+
+  .search-button {
+
+    font-size: 50px;
+
+  }
+}
+
+
+
+/* desktop */
+@media (min-width: 1275px) {
+  
+  .search-box,
+  .search-button {
+    font-size: 30px;
+    
+  }
+
+  
+  
+}
+
+
+
+
+
+

@@ -28,7 +28,7 @@ export default class SearchResults extends Component {
                 </span>
               )}
             </span>
-            <Link to={`/artist/${item.mkid}`}>{item.name}</Link>
+            <Link className="link" to={`/artist/${item.mkid}`}>{item.name}</Link>
           </li>
         ))}
       </ul>
