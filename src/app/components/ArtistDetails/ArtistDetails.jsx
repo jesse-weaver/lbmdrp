@@ -31,7 +31,9 @@ export default class ArtistDetails extends Component {
   render() {
     return (
       <div className="artist-details">
-        Artist Details Go Here!
+        <div>{this.props.artistName}</div> 
+        {/* <div>{this.props.artistImage}</div> */}
+        <div>{this.props.genres}</div>
       </div>
     );
   }
