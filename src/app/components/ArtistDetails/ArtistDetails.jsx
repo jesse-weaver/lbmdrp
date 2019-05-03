@@ -31,10 +31,12 @@ export default class ArtistDetails extends Component {
   render() {
     return (
       <div className="artist-details">
-        <div>{this.props.artistName}</div> 
-        {/* <div>{this.props.artistImage}</div> */}
-        <div>{this.props.genres}</div>
+        <div className="artist-name">{this.props.artistName}</div>
+       <img className="artist-image" src={this.props.artistImage}/>
+        <ul className="artist-genre">{this.props.genres.map((genre) => (
+          <li key={genre}>{genre}</li>
+        ))}</ul>
       </div>
-    );
+    )
   }
 }
