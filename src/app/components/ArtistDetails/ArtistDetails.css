@@ -1,5 +1,28 @@
 
 .artist-details {
   color: white;
-  font-size: 50px;
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
+
+.artist-name {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+.artist-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-radius: 50%;
+  filter: grayscale(100%); 
+}
+ .artist-genre {
+   font-size: 20px;
+   font-style: italic;
+   list-style: none; 
+   margin-right: 8px; 
+   padding: 4px;
+ }
