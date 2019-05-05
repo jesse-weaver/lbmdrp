@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { createStore } from 'redux';
-import { reducers } from '../ducks';
+import { reducers } from './ducks';
 import Layout from './components/Layout/Layout.jsx';
 import './main.css';
 

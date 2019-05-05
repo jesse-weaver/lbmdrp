@@ -72,7 +72,6 @@ export default class Artist {
         });
         return;
       }
-      console.log(body);
       res.json(body);
     };
 

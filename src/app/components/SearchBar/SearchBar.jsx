@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+// import { Redirect } from "react-router-dom";
 import PropTypes from 'prop-types';
 import searchCss from './SearchBar.css';
-import { SEARCH_RESULTS_SUCCESS } from '../../../ducks';
+import { SEARCH_RESULTS_SUCCESS } from '../../ducks';
 
 export default class SearchBar extends Component {
+  static propTypes = {
+    onSearchResults: PropTypes.func.isRequired,
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -15,7 +20,6 @@ export default class SearchBar extends Component {
   // this queries the api for data
   handleFetch = (query) => {
     const fetchUrl = `/api/artist?q=${query}`;
-    this.setState({ query });
 
     fetch(fetchUrl)
       .then(response => response.json())
@@ -24,8 +28,9 @@ export default class SearchBar extends Component {
           throw new Error('No Results', err);
           return;
         }
-        this.props.dispatch({ type: SEARCH_RESULTS_SUCCESS, payload: results });
-        return results;
+        this.props.onSearchResults(results);
+        this.props.history.push(`/search?q=${query}`);
+        // return (<Redirect push to={`/search?q=${query}`} />);
       }).catch(err => {
         console.log(`Errors when fetching ${fetchUrl}:`, err);
       });
