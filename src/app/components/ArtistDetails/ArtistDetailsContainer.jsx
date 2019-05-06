@@ -15,8 +15,9 @@ const getArtistImage = (images) => {
 const mapStateToProps = (state) => {
   return {
     artistName: state.artistDetails.name || '',
+    spotifyUri: state.artistDetails.spotify_uri || '',
     artistImage: getArtistImage(state.artistDetails.images),
-    genres: state.artistDetails.genres || [],
+    albums: state.artistDetails.albums && state.artistDetails.albums.slice(0, 4) || [],
   };
 };
 

@@ -61,7 +61,7 @@ export default class Artist {
 
   static fetchArtistAlbums(artistId, res) {
     // https: //api.spotify.com/v1/{id}
-    const requestUrl = `${baseUrl}/artists/${artistId}/albums?include_groups=album&limit=10`;
+    const requestUrl = `${baseUrl}/artists/${artistId}/albums?include_groups=album&limit=10&country=US`;
     debug('requestURL: ', requestUrl);
 
     return fetch(requestUrl, {
@@ -79,7 +79,7 @@ export default class Artist {
         external_urls: album.external_urls,
         total_tracks: album.total_tracks,
         href: album.href,
-        images: album.images,
+        image:Artist.getImage (album.images, 300), 
         spotify_uri: album.uri,
       }));
       return filteredFields;
@@ -88,6 +88,16 @@ export default class Artist {
       debug('bad response from api/artist: ', err);
       throw err;
     });
+  }
+
+  static getImage(images, imageSize) {
+    if (!Array.isArray(images)) {
+      return '';
+    }
+    const largeImage = images.filter((image) => {
+      return image.width == imageSize;
+    });
+    return largeImage.length ? largeImage.shift().url : null;
   }
 
   static getArtistDetails(req, res) {
