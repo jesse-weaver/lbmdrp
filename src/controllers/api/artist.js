@@ -1,4 +1,4 @@
-import request from 'request';
+import fetch from 'node-fetch';
 import { get } from 'lodash';
 import logger from 'debug';
 
@@ -11,70 +11,99 @@ export default class Artist {
     const query = get(req, 'query.q', '');
     const requestUrl = `${baseUrl}/search/?q=${query}&type=artist&limit=25`;
 
-    const requestOptions = {
-      url: requestUrl,
-      json: true,
+    fetch(requestUrl, {
+      method: 'get',
       headers: {
+        'Content-Type': 'application/json',
         Authorization: res.locals.requestToken,
       },
-    };
-
-    const callback = (err, response, body) => {
-      if (err) {
-        debug('Error while trying to retrieve artists search');
-        throw (err);
-      }
-
-      if (response.statusCode !== 200) {
-        debug(`bad response from api/artist: ${response.statusCode}`);
-        debug(`requestUrl: ${requestOptions.url}`);
-        debug(`response body:`, response.body);
-        res.json({ error: 'bad response' });
-      }
-
-      const results = body.artists.items.map(artist => ({
+    })
+    .then(result => result.json())
+    .then((response) => {
+      const results = response.artists.items.map(artist => ({
         mkid: artist.id,
         name: artist.name,
-        image: artist.images && artist.images[0] && artist.images[0].url || '',
+        image: (artist.images && artist.images[0] && artist.images[0].url) || '',
       }));
       res.json(results);
-    };
-
-    request(requestOptions, callback);
+    })
+    .catch((err) => {
+      debug('Error while trying to retrieve artists search: ', err);
+      res.json({ error: 'bad response' });
+    });
   }
 
-  static getArtistDetails(req, res) {
-    const artistId = get(req.params, 'artistId', '');
+  static fetchArtistDetails(artistId, res) {
     // https: //api.spotify.com/v1/{id}
     const requestUrl = `${baseUrl}/artists/${artistId}`;
     debug('requestURL: ', requestUrl);
 
-    const requestOptions = {
-      url: requestUrl,
-      json: true,
+    return fetch(requestUrl, {
+      method: 'get',
       headers: {
+        'Content-Type': 'application/json',
         Authorization: res.locals.requestToken,
       },
-    };
+    })
+    .then(result => result.json())
+    .then(artistDetails => ({
+      name: artistDetails.name,
+      id: artistDetails.id,
+      spotify_uri: artistDetails.uri,
+      images: artistDetails.images,
+      genres: artistDetails.genres,
+    }))
+    .catch((err) => {
+      debug('bad response from api/artist: ', err);
+      throw err;
+    });
+  }
 
-    const callback = (err, response, body) => {
-      if (err) {
-        debug('Error while trying to retrieve artists search');
-        throw (err);
-      }
+  static fetchArtistAlbums(artistId, res) {
+    // https: //api.spotify.com/v1/{id}
+    const requestUrl = `${baseUrl}/artists/${artistId}/albums?include_groups=album&limit=10`;
+    debug('requestURL: ', requestUrl);
 
-      if (response.statusCode !== 200) {
-        debug(`bad response from api/artist: ${response.statusCode}`);
-        debug(`requestUrl: ${requestOptions.url}`);
-        debug(`response body:`, response.body);
-        res.json({
-          error: 'bad response',
-        });
-        return;
-      }
-      res.json(body);
-    };
+    return fetch(requestUrl, {
+      method: 'get',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: res.locals.requestToken,
+      },
+    })
+    .then(result => result.json())
+    .then((albums) => {
+      const filteredFields = albums.items.map(album => ({
+        name: album.name,
+        release_date: album.release_date,
+        external_urls: album.external_urls,
+        total_tracks: album.total_tracks,
+        href: album.href,
+        images: album.images,
+        spotify_uri: album.uri,
+      }));
+      return filteredFields;
+    })
+    .catch((err) => {
+      debug('bad response from api/artist: ', err);
+      throw err;
+    });
+  }
 
-    request(requestOptions, callback);
+  static getArtistDetails(req, res) {
+    const artistId = get(req.params, 'artistId', '');
+
+    Promise.all([
+      Artist.fetchArtistDetails(artistId, res),
+      Artist.fetchArtistAlbums(artistId, res),
+    ])
+    .then(([details, albums]) => res.json({
+      ...details,
+      albums,
+    }))
+    .catch((err) => {
+      debug('bad response from api/artist: ', err);
+      throw err;
+    });
   }
 }

@@ -9,7 +9,7 @@ const getArtistImage = (images) => {
   const largeImage = images.filter((image) => {
     return image.width == '640';
   });
-  return largeImage.shift().url;
+  return largeImage.length ? largeImage.shift().url : null;
 }
 
 const mapStateToProps = (state) => {
