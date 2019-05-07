@@ -1,7 +1,14 @@
+.header-main {
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 5px;
+}
 
 .artist-details {
   color: white;
-  font-size: 35px;
+  font-size: 2rem;
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
@@ -15,14 +22,29 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 40%;
   border-radius: 50%;
-  filter: grayscale(100%); 
+  /* filter: grayscale(100%);  */
 }
- .artist-genre {
-   font-size: 20px;
-   font-style: italic;
-   list-style: none; 
-   margin-right: 8px; 
-   padding: 4px;
- }
+.spotify-uri {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.artist-albums {
+margin-left: 25px;
+}
+.artist-album {
+  float: left;
+  text-align: center
+}
+.album-image {
+  max-width: 150;
+  margin: 10px;
+  
+}
+.album-name {
+  font-size: .3em
+}
+.release-date {
+  font-size: .3rem;
+}

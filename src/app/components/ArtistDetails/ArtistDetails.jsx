@@ -31,14 +31,16 @@ export default class ArtistDetails extends Component {
     return (
       <div className="artist-details">
         <div className="artist-name">{this.props.artistName}</div>
-        <div className="spotify-uri"><a href={this.props.spotifyUri}>open in spotify</a></div>
         <img className="artist-image" src={this.props.artistImage}/>
+        <div className="spotify-uri"><a href={this.props.spotifyUri}>open in spotify</a></div>
         {this.props.albums.map((album) => (
-          <div className="artist-album-container"key={album.name}>
+        <div className="artist-albums">
+          <div className="artist-album"key={album.name}>
             <img className="album-image"src={album.image}></img>
+            <div className="album-name">{album.name}</div>
             <div className="release-date">{album.release_date}</div>
-            {album.name}
           </div>
+        </div>  
         ))}
       </div>
     )
