@@ -17,6 +17,13 @@ export default class SearchBar extends Component {
     }
   }
 
+  componentDidMount = () => {
+    const { query } = this.props.match.params;
+    if (query) {
+      this.handleFetch(query);
+    }
+  }
+
   // this queries the api for data
   handleFetch = (query) => {
     const fetchUrl = `/api/artist?q=${query}`;
@@ -29,8 +36,7 @@ export default class SearchBar extends Component {
           return;
         }
         this.props.onSearchResults(results);
-        this.props.history.push(`/search?q=${query}`);
-        // return (<Redirect push to={`/search?q=${query}`} />);
+        this.props.history.push(`/search/${query}`);
       }).catch(err => {
         console.log(`Errors when fetching ${fetchUrl}:`, err);
       });

@@ -17,6 +17,9 @@ export default class SearchResults extends Component {
     const { results } = this.props;
     return (
       <ul className="search-results">
+        {!this.props.searchResults.length && (
+          <div>No Artists Found</div>
+        )}
         {this.props.searchResults.map(item => (
           <li className="search-result-item" key={item.mkid}>
             <span className="artist-thumbnail">

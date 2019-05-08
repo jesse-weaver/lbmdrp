@@ -18,7 +18,6 @@ export default class ArtistDetails extends Component {
     fetch(fetchUrl)
       .then(response => response.json())
       .then((results) => {
-        console.log(results);
         this.props.dispatch({ type: ARTIST_DETAILS_SUCCESS, payload: results });
         return results;
       }).catch(err => {
@@ -31,17 +30,19 @@ export default class ArtistDetails extends Component {
     return (
       <div className="artist-details">
         <div className="artist-name">{this.props.artistName}</div>
-        <img className="artist-image" src={this.props.artistImage}/>
-        <div className="spotify-uri"><a href={this.props.spotifyUri}>open in spotify</a></div>
-        {this.props.albums.map((album) => (
+        <img className="artist-image" src={this.props.artistImage} />
+        <div className="spotify-uri">
+          <a href={this.props.spotifyUri}>Open in Spotify</a>
+        </div>
         <div className="artist-albums">
+        {this.props.albums.map((album) => (
           <div className="artist-album"key={album.name}>
-            <img className="album-image"src={album.image}></img>
+            <img className="album-image"src={album.image} />
             <div className="album-name">{album.name}</div>
             <div className="release-date">{album.release_date}</div>
           </div>
-        </div>  
         ))}
+        </div>
       </div>
     )
   }

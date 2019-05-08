@@ -17,7 +17,7 @@ export default function pageLayout() {
       </div>
       <div className="search-results">
         <Route exact path="/" component={SearchResults} />
-        <Route exact path="/search" component={SearchResults} />
+        <Route exact path="/search/:query" component={SearchResults} />
         <Route exact path="/artist/:id" component={ArtistDetails} />
       </div>
     </div>

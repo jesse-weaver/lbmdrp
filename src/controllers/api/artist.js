@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import { get } from 'lodash';
+import { get, uniqBy } from 'lodash';
 import logger from 'debug';
 
 const debug = logger('lbmdrop:controllers:api:artist');
@@ -7,6 +7,11 @@ const baseUrl = 'https://api.spotify.com/v1';
 
 export default class Artist {
 
+  /**
+   * Search for artists based on artist name
+   * @param {*} req Express request object
+   * @param {*} res Express response object
+   */
   static searchArtists(req, res) {
     const query = get(req, 'query.q', '');
     const requestUrl = `${baseUrl}/search/?q=${query}&type=artist&limit=25`;
@@ -20,10 +25,14 @@ export default class Artist {
     })
     .then(result => result.json())
     .then((response) => {
+      // response.artists.items.forEach((artist) => {
+      //   console.log(artist.images);
+      // });
+
       const results = response.artists.items.map(artist => ({
         mkid: artist.id,
         name: artist.name,
-        image: (artist.images && artist.images[0] && artist.images[0].url) || '',
+        image: Artist.getImage(artist.images, 200, 400) || '',
       }));
       res.json(results);
     })
@@ -33,6 +42,11 @@ export default class Artist {
     });
   }
 
+  /**
+   * Fetch artist details for a given artist ID
+   * @param {*} artistId Spotify artist ID
+   * @param {*} res Express response object
+   */
   static fetchArtistDetails(artistId, res) {
     // https: //api.spotify.com/v1/{id}
     const requestUrl = `${baseUrl}/artists/${artistId}`;
@@ -50,7 +64,7 @@ export default class Artist {
       name: artistDetails.name,
       id: artistDetails.id,
       spotify_uri: artistDetails.uri,
-      images: artistDetails.images,
+      image: Artist.getImage(artistDetails.images, 300, 650),
       genres: artistDetails.genres,
     }))
     .catch((err) => {
@@ -59,6 +73,11 @@ export default class Artist {
     });
   }
 
+  /**
+   * Fetch the albums for a given artist ID
+   * @param {*} artistId Spotify artist ID
+   * @param {*} res Express response object
+   */
   static fetchArtistAlbums(artistId, res) {
     // https: //api.spotify.com/v1/{id}
     const requestUrl = `${baseUrl}/artists/${artistId}/albums?include_groups=album&limit=10&country=US`;
@@ -79,10 +98,10 @@ export default class Artist {
         external_urls: album.external_urls,
         total_tracks: album.total_tracks,
         href: album.href,
-        image:Artist.getImage (album.images, 300), 
+        image: Artist.getImage(album.images, 150, 300),
         spotify_uri: album.uri,
       }));
-      return filteredFields;
+      return uniqBy(filteredFields, 'name');
     })
     .catch((err) => {
       debug('bad response from api/artist: ', err);
@@ -90,16 +109,24 @@ export default class Artist {
     });
   }
 
-  static getImage(images, imageSize) {
+  /**
+   * Utility function to pull a specific image based on width
+   * @param {*} images Array of images
+   * @param {*} imageSize Specified width of image to pull
+   */
+  static getImage(images, minimumImageSize, maximumImageSize) {
     if (!Array.isArray(images)) {
-      return '';
+      return null;
     }
-    const largeImage = images.filter((image) => {
-      return image.width == imageSize;
-    });
+    const largeImage = images.filter(image => image.width >= minimumImageSize && image.width <= maximumImageSize);
     return largeImage.length ? largeImage.shift().url : null;
   }
 
+  /**
+   * Returns the artist details and albums for an artist based on artist ID
+   * @param {*} req Express request object
+   * @param {*} res Express response object
+   */
   static getArtistDetails(req, res) {
     const artistId = get(req.params, 'artistId', '');
 
