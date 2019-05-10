@@ -8,6 +8,10 @@ export default class ArtistDetails extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      albumsExpanded: false,
+
+    }
   }
 
   // this queries the api for data
@@ -24,9 +28,18 @@ export default class ArtistDetails extends Component {
         console.log(`Errors when fetching ${fetchUrl}:`, err);
       });
   }
+//when clicked first time
+  displayAllAlbums = () => {
+    this.setState({
+      albumsExpanded: !this.state.albumsExpanded,
+    });
+  }
 
 
   render() {
+    const { albums } = this.props;
+    const firstAlbums = albums.slice(0, 4);
+    const remainingAlbums = albums.slice(4);
     return (
       <div className="artist-details">
         <div className="artist-name">{this.props.artistName}</div>
@@ -35,13 +48,22 @@ export default class ArtistDetails extends Component {
           <a href={this.props.spotifyUri}>Open in Spotify</a>
         </div>
         <div className="artist-albums">
-        {this.props.albums.map((album) => (
-          <div className="artist-album"key={album.name}>
-            <img className="album-image"src={album.image} />
-            <div className="album-name">{album.name}</div>
-            <div className="release-date">{album.release_date}</div>
-          </div>
-        ))}
+          {firstAlbums.map((album) => (
+            <div className="artist-album" key={album.name}>
+              <img className="album-image" src={album.image} />
+              <div className="album-name">{album.name}</div>
+              <div className="release-date">{album.release_date}</div>
+            </div>
+          ))}
+          <a className="more-albums" onClick={this.displayAllAlbums}>More Albums</a>
+
+          {this.state.albumsExpanded && remainingAlbums.map((album) => (
+            <div className="artist-album" key={album.name}>
+              <img className="album-image" src={album.image} />
+              <div className="album-name">{album.name}</div>
+              <div className="release-date">{album.release_date}</div>
+            </div>
+          ))}
         </div>
       </div>
     )

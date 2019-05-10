@@ -1,6 +1,6 @@
 .artist-details {
   color: white;
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
@@ -31,7 +31,7 @@
 
 .artist-albums {
   margin: 0 auto;
-  width: 60%;
+  width: 102%;
 }
 
 .artist-album {
@@ -41,14 +41,15 @@
 }
 
 .album-image {
-  max-width: 200px;
+  max-width: 75%;
   margin: 10px;
+  filter: drop-shadow(0 0 0.75rem black);
 }
 
 .album-name {
-  font-size: .3em
+  font-size: .5em
 }
 
 .release-date {
-  font-size: .3rem;
+  font-size: 1.5rem;
 }

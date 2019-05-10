@@ -7,7 +7,7 @@ const mapStateToProps = (state) => {
     artistName: state.artistDetails.name || '',
     spotifyUri: state.artistDetails.spotify_uri || '',
     artistImage: state.artistDetails.image || '',
-    albums: (state.artistDetails.albums && state.artistDetails.albums.slice(0, 8)) || [],
+    albums: state.artistDetails.albums || [],
   };
 };
 

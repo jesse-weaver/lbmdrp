@@ -66,7 +66,9 @@ export default class SearchBar extends Component {
           ref={(input) => { this.searchInput = input; }}
           onKeyDown={this.handleKeyDown}
         />
-        <button className="search-button" name="search" value="search" onClick={this.handleClick}>Search</button>
+        <input type="image" className="search-button" name="search" value="search" src="/images/magIcon1.jpeg" onClick={this.handleClick}>
+          {}
+        </input>
       </div>
     );
   }
