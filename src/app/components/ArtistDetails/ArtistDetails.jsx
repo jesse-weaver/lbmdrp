@@ -55,8 +55,7 @@ export default class ArtistDetails extends Component {
               <div className="release-date">{album.release_date}</div>
             </div>
           ))}
-          <a className="more-albums" onClick={this.displayAllAlbums}>More Albums</a>
-
+          
           {this.state.albumsExpanded && remainingAlbums.map((album) => (
             <div className="artist-album" key={album.name}>
               <img className="album-image" src={album.image} />
@@ -65,6 +64,10 @@ export default class ArtistDetails extends Component {
             </div>
           ))}
         </div>
+        <div className="more-albums">
+            <a onClick={this.displayAllAlbums}>
+          {this.state.albumsExpanded ? 'Less' : 'More Albums'}</a>
+          </div>
       </div>
     )
   }
