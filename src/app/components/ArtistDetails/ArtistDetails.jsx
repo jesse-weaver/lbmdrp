@@ -67,7 +67,7 @@ export default class ArtistDetails extends Component {
         <div className="more-albums">
             <a onClick={this.displayAllAlbums}>
           {this.state.albumsExpanded ? 'Less' : 'More Albums'}</a>
-          </div>
+        </div>
       </div>
     )
   }
