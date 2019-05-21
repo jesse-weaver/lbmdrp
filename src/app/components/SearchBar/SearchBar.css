@@ -2,10 +2,11 @@
 
 .search {
   display: inline-flex;
+  filter: drop-shadow(0 0 0.75rem black);
 }
 .search-box,
 .search-button {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   text-align: center;
   border-color: white;
 }

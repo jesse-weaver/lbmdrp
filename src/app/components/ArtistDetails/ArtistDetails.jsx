@@ -50,7 +50,7 @@ export default class ArtistDetails extends Component {
         <div className="artist-albums">
           {firstAlbums.map((album) => (
             <div className="artist-album" key={album.name}>
-              <img className="album-image" src={album.image} />
+              <a href={album.spotify_uri}><img className="album-image" src={album.image} /></a>
               <div className="album-name">{album.name}</div>
               <div className="release-date">{album.release_date}</div>
             </div>
@@ -58,16 +58,17 @@ export default class ArtistDetails extends Component {
           
           {this.state.albumsExpanded && remainingAlbums.map((album) => (
             <div className="artist-album" key={album.name}>
-              <img className="album-image" src={album.image} />
+                            <a href={album.spotify_uri}><img className="album-image" src={album.image} /></a>
               <div className="album-name">{album.name}</div>
               <div className="release-date">{album.release_date}</div>
             </div>
           ))}
         </div>
-        <div className="more-albums">
+        
+        {remainingAlbums.length > 0 && (<div className="more-albums">
             <a onClick={this.displayAllAlbums}>
           {this.state.albumsExpanded ? 'Less' : 'More Albums'}</a>
-        </div>
+        </div>)}
       </div>
     )
   }

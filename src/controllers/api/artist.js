@@ -80,7 +80,7 @@ export default class Artist {
    */
   static fetchArtistAlbums(artistId, res) {
     // https: //api.spotify.com/v1/{id}
-    const requestUrl = `${baseUrl}/artists/${artistId}/albums?include_groups=album&limit=10&country=US`;
+    const requestUrl = `${baseUrl}/artists/${artistId}/albums?include_groups=album&limit=20&country=US`;
     debug('requestURL: ', requestUrl);
 
     return fetch(requestUrl, {
