@@ -6,7 +6,7 @@
   grid-template-areas:
     "h h h h h h h h h h h h"
     "sb sb sb sb sb sb sb sb sb sb sb sb"
-    "sr sr sr sr sr sr sr sr sr sr sr sr";
+    "main main main main main main main main main main main main";
   color: #fff;
   font-family: 'Roboto',sans-serif;
 }
@@ -19,6 +19,6 @@
   grid-area: sb;
 }
 
-.search-results {
-  grid-area: sr;
+.main-content {
+  grid-area: main;
 }

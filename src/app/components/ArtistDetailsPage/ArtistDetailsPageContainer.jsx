@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ArtistDetails from './ArtistDetails.jsx';
+import ArtistDetailsPage from './ArtistDetailsPage.jsx';
 
 const mapStateToProps = (state) => {
   return {
@@ -11,6 +11,6 @@ const mapStateToProps = (state) => {
   };
 };
 
-const ArtistDetailsContainer = connect(mapStateToProps)(ArtistDetails);
+const ArtistDetailsPageContainer = connect(mapStateToProps)(ArtistDetailsPage);
 
-export default ArtistDetailsContainer;
+export default ArtistDetailsPageContainer;

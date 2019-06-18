@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import SearchResults from './SearchResults.jsx';
+import SearchResultsPage from './SearchResultsPage.jsx';
 
 
 const mapStateToProps = (state) => {
@@ -9,8 +9,8 @@ const mapStateToProps = (state) => {
   };
 };
 
-const SearchResultsContainer = connect(
+const SearchResultsPageContainer = connect(
   mapStateToProps,
-)(SearchResults);
+)(SearchResultsPage);
 
-export default SearchResultsContainer;
+export default SearchResultsPageContainer;

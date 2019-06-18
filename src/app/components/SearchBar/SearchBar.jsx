@@ -18,7 +18,7 @@ export default class SearchBar extends Component {
   }
 
   componentDidMount = () => {
-    const { query } = this.props.match.params;
+    const query = this.props.match && this.props.match.params && this.props.match.params.query || null;
     if (query) {
       this.handleFetch(query);
     }
