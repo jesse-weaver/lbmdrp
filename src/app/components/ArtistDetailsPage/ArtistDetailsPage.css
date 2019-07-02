@@ -1,3 +1,6 @@
+
+
+
 .artist-details {
   color: white;
   font-size: 4rem;
@@ -46,7 +49,7 @@
 }
 
 .album-name {
-  font-size: .5em
+  font-size: .35em
 }
 
 .release-date {
@@ -55,5 +58,14 @@
 
 .more-albums {
   margin-top: 25px;
+  
+}
+
+@media (min-width: 1275px) {
+
+  .artist-image {
+    width: 10%;
+    
+  }
   
 }

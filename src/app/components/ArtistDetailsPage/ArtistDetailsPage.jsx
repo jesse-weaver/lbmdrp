@@ -41,31 +41,32 @@ export default class ArtistDetailsPage extends Component {
     const { albums } = this.props;
     const firstAlbums = albums.slice(0, 4);
     const remainingAlbums = albums.slice(4);
+    const AlbumCard = ({ album }) => (
+      <div className="artist-album" key={album.name}>
+        <a href={album.spotify_uri}><img className="album-image" src={album.image} /></a>
+        <div className="album-name">{album.name}</div>
+        <div className="release-date">{album.release_date}</div>
+      </div>
+    );
     return (
       <Layout
         displaySearchBar={false}
       >
         <div className="artist-details">
-          <div className="artist-name">{this.props.artistName}</div>
-          <img className="artist-image" src={this.props.artistImage} />
-          <div className="spotify-uri">
-            <a href={this.props.spotifyUri}>Open in Spotify</a>
+          <div artist-info>
+            <div className="artist-name">{this.props.artistName}</div>
+            <img className="artist-image" src={this.props.artistImage} />
+            <div className="spotify-uri">
+              <a href={this.props.spotifyUri}>Open in Spotify</a>
+            </div>
           </div>
           <div className="artist-albums">
             {firstAlbums.map((album) => (
-              <div className="artist-album" key={album.name}>
-                <a href={album.spotify_uri}><img className="album-image" src={album.image} /></a>
-                <div className="album-name">{album.name}</div>
-                <div className="release-date">{album.release_date}</div>
-              </div>
+              <AlbumCard album={album} />
             ))}
 
             {this.state.albumsExpanded && remainingAlbums.map((album) => (
-              <div className="artist-album" key={album.name}>
-                <a href={album.spotify_uri}><img className="album-image" src={album.image} /></a>
-                <div className="album-name">{album.name}</div>
-                <div className="release-date">{album.release_date}</div>
-              </div>
+              <AlbumCard album={album} />
             ))}
           </div>
 
