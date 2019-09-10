@@ -22,3 +22,13 @@
 .main-content {
   grid-area: main;
 }
+
+/* desktop */
+@media (min-width: 1275px) {
+  .main {
+    grid-template-areas:
+    "h h h h . . . . . . . ."
+    ". . . . sb sb sb sb . . . ."
+    "main main main main main main main main main main main main"; 
+  }
+  }

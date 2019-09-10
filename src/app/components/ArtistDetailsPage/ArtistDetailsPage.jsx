@@ -13,7 +13,16 @@ export default class ArtistDetailsPage extends Component {
       albumsExpanded: false,
 
     }
+    this.goBack = this.goBack.bind(this); 
   }
+ 
+ goBack(){
+     this.props.history.goBack();
+ }
+ 
+
+ 
+ 
 
   // this queries the api for data
   componentDidMount = () => {
@@ -53,6 +62,7 @@ export default class ArtistDetailsPage extends Component {
         displaySearchBar={false}
       >
         <div className="artist-details">
+        <button onClick={this.goBack}>Go Back</button>
           <div artist-info>
             <div className="artist-name">{this.props.artistName}</div>
             <img className="artist-image" src={this.props.artistImage} />

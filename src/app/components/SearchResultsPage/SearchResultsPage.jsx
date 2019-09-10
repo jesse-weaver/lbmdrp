@@ -12,16 +12,18 @@ const SearchResultsPage = ({ searchResults }) => (
       )}
       {searchResults.map(item => (
         <li className="search-result-item" key={item.mkid}>
-          <span className="artist-thumbnail">
+          <Link className="link" to={`/artist/${item.mkid}`}>
+          <div className="artist-thumbnail">
             {item.image ? (
               <img src={item.image} />
             ) : (
-              <span className="placeholder-thumbnail">
+              <div className="placeholder-thumbnail">
                 <img src="/images/searchResultRecord.png" />
-              </span>
+              </div>
             )}
-          </span>
-          <Link className="link" to={`/artist/${item.mkid}`}>{item.name}</Link>
+          </div>
+          {item.name}
+          </Link>
         </li>
       ))}
     </ul>

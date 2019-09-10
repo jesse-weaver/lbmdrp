@@ -3,27 +3,21 @@
 .search {
   display: inline-flex;
   filter: drop-shadow(0 0 0.75rem black);
+  width: 100%;
 }
 .search-box,
 .search-button {
   font-size: 1.75rem;
   text-align: center;
-  border-color: white;
 }
 
 .search-box {
-  -webkit-border-radius: 15px 0 0 15px;
-  -moz-border-radius: 15px 0 0 15px;
-  border-radius: 20px 0 0 20px;
+  width:100%; 
 }
 
 .search-button {
   width: 60px;
   height: 60px;
-  padding-top: 1px;
-  -webkit-border-radius: 0 15px 15px 0;
-  -moz-border-radius: 0 15px 15px 0;
-  border-radius: 0 20px 20px 0;
 }
 
 .search-icon {
@@ -56,13 +50,13 @@
   
   .search-box,
   .search-button {
-    font-size: 30px;
-    
-  }
-
-  
-  
+    font-size: 30px; 
+  } 
+  .search-box {
+    width: 500px;
+  } 
 }
+
 
 
 

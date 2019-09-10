@@ -11,8 +11,6 @@
 }
 
 .search-result-item {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 10px;
   font-size: 5rem;
@@ -20,7 +18,7 @@
 }
 
 .search-result-item:hover {
-  background-color: rgb(255, 255, 255, .9);
+  background-color: rgb(255, 255, 255, .1);
   color: #545454;
 }
 
@@ -33,6 +31,7 @@
   width: 150px;
   height: 150px;
   background: white;
+  filter: drop-shadow(0 0 0.75rem black);
 }
 
 .placeholder-thumbnail {}
@@ -53,8 +52,21 @@
 /*desktop*/
 
 @media (min-width: 1275px) {
-
+  .search-results {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .search-result-item {
+    padding: 10px;
+    font-size: 5rem;
+    width: 350px;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .artist-thumbnail {
+    margin: 0;
+  }
+  .link {
     font-size: 25px;
   }
 }

@@ -60,6 +60,9 @@
   margin-top: 25px;
   
 }
+.more-albums > a {
+  cursor: pointer;
+}
 
 @media (min-width: 1275px) {
 
