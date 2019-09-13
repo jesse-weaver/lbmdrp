@@ -1,10 +1,10 @@
 /* mobile */
-
 .search {
   display: inline-flex;
   filter: drop-shadow(0 0 0.75rem black);
   width: 100%;
 }
+
 .search-box,
 .search-button {
   font-size: 1.75rem;
@@ -27,31 +27,32 @@
   border: none;
 }
 
-
 /* ipad */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+ {
   .search-box {
     font-size: 35px;
-  
+  }
+  .search {
+    font-size: 35px;
+    width: 600px;
+    background-color: red;
   }
 
   .search-button {
-
     font-size: 50px;
-
   }
 }
 
-
-
 /* desktop */
 @media (min-width: 1275px) {
-  
   .search-box,
   .search-button {
     font-size: 30px; 
-  } 
+  }
+
   .search-box {
     width: 500px;
   } 

@@ -1,30 +1,6 @@
 .header-main {
   font-size: 3rem;
   font-weight: 200;
-  text-align: center;
-  /* font-family: 'Roboto', sans-serif; */
   font-family: 'Monoton';
   margin: 5px 5px 25px 5px;
-  
 }
-
-
-
-
-
-
-/* mobile
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-.header-main {
-  font-size: 5em;
-  font-weight: 600;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  margin: 25px;
-} */
