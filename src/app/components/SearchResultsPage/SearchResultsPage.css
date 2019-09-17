@@ -1,21 +1,23 @@
-/* mobile */
+/* mobile/global */
 .link {
   color: white;
   text-decoration: none;
 }
 
 .search-results {
-  list-style-type: none;
+   list-style-type: none;
   list-style: none;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .search-result-item {
-  align-items: center;
-  padding: 10px;
-  font-size: 5rem;
+  margin: 1%;
+    width: 48%;
+    text-align: center;
+    font-size: 2rem;
   color: white;
-}
+  }
 
 .search-result-item:hover {
   background-color: rgb(255, 255, 255, .1);
@@ -28,8 +30,8 @@
 
 .artist-thumbnail>img,
 .placeholder-thumbnail>img {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   background: white;
   filter: drop-shadow(0 0 0.75rem black);
 }
