@@ -1,0 +1,28 @@
+.thumbnail-container {
+    margin: 1%;
+    width: 48%;
+    text-align: center;
+}
+
+.thumbnail-href-image {
+    
+}
+.thumbnail-image {
+    max-width: 75%;
+    margin: 10px;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.thumbnail-title {
+    font-size: .35em;
+    
+}
+
+.thumbnail-href-title {
+    text-decoration: none;
+    color: inherit;
+}
+
+.thumbnail-subtitle {
+    font-size: 1.5rem;
+}

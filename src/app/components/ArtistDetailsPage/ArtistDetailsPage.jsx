@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Layout from '../Layout/Layout.jsx';
 import { ARTIST_DETAILS_SUCCESS } from '../../ducks'
 import artistDetailsCSS from './ArtistDetailsPage.css';
+import ThumbnailCard from '../ThumbnailCard/ThumbnailCard.jsx';
 
 export default class ArtistDetailsPage extends Component {
 
@@ -72,7 +73,12 @@ export default class ArtistDetailsPage extends Component {
           </div>
           <div className="artist-albums">
             {firstAlbums.map((album) => (
-              <AlbumCard album={album} />
+               <ThumbnailCard 
+               title={album.name} 
+               subtitle={album.release_date}
+               image={album.image}
+               href={album.spotify_uri}  
+               />
             ))}
 
             {this.state.albumsExpanded && remainingAlbums.map((album) => (
