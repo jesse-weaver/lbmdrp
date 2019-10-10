@@ -5,19 +5,18 @@
 }
 
 .search-results {
-   list-style-type: none;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .search-result-item {
   margin: 1%;
-    width: 48%;
-    text-align: center;
-    font-size: 2rem;
+  width: 48%;
+  font-size: 2rem;
   color: white;
-  }
+}
 
 .search-result-item:hover {
   background-color: rgb(255, 255, 255, .1);
@@ -36,33 +35,19 @@
   filter: drop-shadow(0 0 0.75rem black);
 }
 
-.placeholder-thumbnail {}
-
-
-/* ipad */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-
-
+/* tablet */
+@media only screen and (min-width: 768px) {
   .search-result-item {
-
     font-size: 2em;
-
   }
-
 }
 
-/*desktop*/
-
-@media (min-width: 1275px) {
-  .search-results {
-    display: flex;
-    flex-wrap: wrap;
-  }
+/* desktop */
+@media only screen and (min-width: 1275px) {
   .search-result-item {
     padding: 10px;
     font-size: 5rem;
-    width: 350px;
-    text-align: center;
+    width: 200px;
     margin-top: 25px;
   }
   .artist-thumbnail {

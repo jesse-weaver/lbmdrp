@@ -1,21 +1,17 @@
-.thumbnail-container {
-    margin: 1%;
-    width: 48%;
+.thumbnail-container { 
     text-align: center;
 }
 
-.thumbnail-href-image {
-    
-}
 .thumbnail-image {
-    max-width: 75%;
     margin: 10px;
+    width: 300px;
+    height: 300px;
     filter: drop-shadow(0 0 0.75rem black);
+    background: white;
 }
 
 .thumbnail-title {
     font-size: .35em;
-    
 }
 
 .thumbnail-href-title {
@@ -25,4 +21,34 @@
 
 .thumbnail-subtitle {
     font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .thumbnail-image {
+    width: 175px;
+    height: 175px;
+  }
+
+  .thumbnail-title {
+     font-size: .25em;
+  }
+
+  .thumbnail-subtitle {
+    font-size: .15em;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .thumbnail-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .thumbnail-title {
+    font-size: .25em;
+  }
+
+  .thumbnail-subtitle {
+    font-size: .15em;
+  }
 }

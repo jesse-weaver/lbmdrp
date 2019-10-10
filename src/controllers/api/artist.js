@@ -32,7 +32,7 @@ export default class Artist {
       const results = response.artists.items.map(artist => ({
         mkid: artist.id,
         name: artist.name,
-        image: Artist.getImage(artist.images, 200, 400) || '',
+        image: Artist.getImage(artist.images, 200, 400) || 'images/searchResultRecord.png',
       }));
       res.json(results);
     })

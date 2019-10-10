@@ -74,10 +74,10 @@ export default class ArtistDetailsPage extends Component {
           <div className="artist-albums">
             {firstAlbums.map((album) => (
                <ThumbnailCard 
-               title={album.name} 
-               subtitle={album.release_date}
-               image={album.image}
-               href={album.spotify_uri}  
+                  title={album.name} 
+                  subtitle={album.release_date}
+                  image={album.image}
+                  href={album.spotify_uri}  
                />
             ))}
 
