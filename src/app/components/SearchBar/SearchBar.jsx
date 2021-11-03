@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Redirect } from "react-router-dom";
 import PropTypes from 'prop-types';
 import searchCss from './SearchBar.css';
 import { SEARCH_RESULTS_SUCCESS } from '../../ducks';
@@ -66,9 +65,7 @@ export default class SearchBar extends Component {
           ref={(input) => { this.searchInput = input; }}
           onKeyDown={this.handleKeyDown}
         />
-        <input type="image" className="search-button" name="search" value="search" src="/images/magIcon1.jpeg" onClick={this.handleClick}>
-          {}
-        </input>
+        <input type="image" className="search-button" name="search" value="search" src="/images/magIcon1.jpeg" onClick={this.handleClick}/>
       </div>
     );
   }

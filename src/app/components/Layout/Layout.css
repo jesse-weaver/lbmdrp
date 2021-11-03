@@ -24,11 +24,10 @@
 }
 
 /* desktop */
-@media (min-width: 1275px) {
+@media (min-width: 800px) {
   .main {
     grid-template-areas:
-    "h h h h . . . . . . . ."
-    ". . . . sb sb sb sb . . . ."
+    "h h h h . . sb sb sb sb sb sb"
     "main main main main main main main main main main main main"; 
   }
-  }
+}

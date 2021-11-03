@@ -1,6 +1,5 @@
 
 
-
 .artist-details {
   color: white;
   font-size: 4rem;
@@ -34,7 +33,7 @@
   display: flex;
   flex-wrap:wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .artist-album {
@@ -65,11 +64,10 @@
   cursor: pointer;
 }
 
-@media (min-width: 1275px) {
+@media (min-width: 1000px) {
 
   .artist-image {
-    width: 10%;
-    
+    width: 15%;
   }
   
 }
