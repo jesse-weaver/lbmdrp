@@ -27,6 +27,7 @@
   border: none;
 }
 
+
 /* ipad */
 @media only screen 
   and (min-device-width: 768px) 
@@ -44,6 +45,7 @@
   .search-button {
     font-size: 50px;
   }
+  
 }
 
 /* desktop */
@@ -53,8 +55,8 @@
     font-size: 30px; 
   }
 
-  .search-box {
-    width: 80%;
+  .search-bar {
+    margin-top: 20px;
   } 
 }
 
