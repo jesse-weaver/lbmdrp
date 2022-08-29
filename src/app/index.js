@@ -7,6 +7,7 @@ import { reducers } from './ducks';
 import SearchResultsPage from './components/SearchResultsPage/SearchResultsPageContainer.jsx';
 import ArtistDetailsPage from './components/ArtistDetailsPage/ArtistDetailsPageContainer.jsx';
 import './main.css';
+import './main.scss'
 
 /* eslint-disable no-underscore-dangle */
 const store = createStore(

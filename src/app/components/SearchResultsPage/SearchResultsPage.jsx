@@ -13,6 +13,7 @@ const SearchResultsPage = ({ searchResults }) => (
       {searchResults.map(item => (
         <div className="search-result-item">
           <ThumbnailCard
+            key={item.mkid}
             title={item.name}
             image={item.image}
             href={`/artist/${item.mkid}`}

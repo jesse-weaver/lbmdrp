@@ -4,9 +4,9 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto 75px auto;
   grid-template-areas:
-    "h h h h h h h h h h h h"
-    "sb sb sb sb sb sb sb sb sb sb sb sb"
-    "main main main main main main main main main main main main";
+    "h h h h h h h h"
+    "sb sb sb sb sb sb sb sb"
+    "main main main main main main main main";
   color: #fff;
   font-family: 'Roboto',sans-serif;
 }
@@ -27,7 +27,7 @@
 @media (min-width: 800px) {
   .main {
     grid-template-areas:
-    "h h h h . . sb sb sb sb sb sb"
-    "main main main main main main main main main main main main"; 
+    "h h h h . . sb sb sb sb"
+    "main main main main main main main main main main";
   }
 }
