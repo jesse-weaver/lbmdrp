@@ -11,15 +11,12 @@
     "lint": "eslint . --cache",
     "start": "node ./dist/server.js",
     "start:watch": "DEBUG=lbmdrop* nodemon -e js,html,css ./dist/server.js",
-    "start:dev": "nodemon --watch webpack.dev.js --exec \"cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js\"",
-    "start:hotreload": "",
+    "start:dev": "npm run babel && nodemon --watch webpack.dev.js --exec \"cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js\"",
     "build": "cross-env NODE_ENV=production babel src -d dist --source-maps && webpack --config config/webpack.prod.js",
     "babel": "babel src -d dist --source-maps",
     "babel:watch": "babel -w src -d dist --source-maps",
     "start:dev:webpack": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "prettify": "prettier --write 'src/**/*.js'",
-    "webpack": "webpack --env production",
-    "webpack:watch": "webpack --watch"
+    "prettify": "prettier --write 'src/**/*.js'"
   },
   "repository": {
     "type": "git",

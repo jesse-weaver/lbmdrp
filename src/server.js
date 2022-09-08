@@ -34,7 +34,7 @@ const port = normalizePort(process.env.PORT || '3030');
  * Event listener for HTTP server "listening" event.
  */
 function onListening() {
-  debug(`Listening on http://localhost:${port}`);
+  console.log(`Server listening on http://localhost:${port}`);
 }
 
 function onError(error) {

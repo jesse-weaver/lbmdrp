@@ -11,6 +11,8 @@ export default class Artist {
    * Search for artists based on artist name
    * @param {*} req Express request object
    * @param {*} res Express response object
+   * 
+   * Example: /api/artists?q=<search term>
    */
   static searchArtists(req, res) {
     const query = get(req, 'query.q', '');
@@ -46,9 +48,10 @@ export default class Artist {
    * Fetch artist details for a given artist ID
    * @param {*} artistId Spotify artist ID
    * @param {*} res Express response object
+   * 
+   * API Spotify URL: https: //api.spotify.com/v1/{id}
    */
   static fetchArtistDetails(artistId, res) {
-    // https: //api.spotify.com/v1/{id}
     const requestUrl = `${baseUrl}/artists/${artistId}`;
     debug('requestURL: ', requestUrl);
 

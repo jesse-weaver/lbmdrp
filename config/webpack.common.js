@@ -28,7 +28,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: paths.build,
+          from: paths.public,
           to: 'assets',
           globOptions: {
             ignore: ['*.DS_Store'],

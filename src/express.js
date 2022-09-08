@@ -15,31 +15,40 @@ import ArtistClient from './controllers/api/artist';
 
 const app = express();
 
-// const compiler = webpack({
-//     // configuration
-//     webpackConfig
-// });
+var options = {
+  dotfiles: 'ignore',
+  etag: false,
+  extensions: ['htm', 'html'],
+  index: false,
+  maxAge: '1d',
+  redirect: false,
+  setHeaders: function (res, path, stat) {
+    res.set('x-timestamp', Date.now())
+  }
+}
 
-// console.log("webpack config:", webpackConfig());
-// const compiler = webpack(webpackConfig);
-//
-// app.use(webpackDevMiddleware(compiler, {
-//   publicPath: "/"
-// }));
-app.use(express.static('public'));
+const assets = path.join(__dirname, 'frontend/assets')
+console.log("assets path: ", assets)
+
+app.use("/assets", express.static(path.join(__dirname, 'frontend/assets')))
+app.use("/js",express.static(path.join(__dirname, 'frontend/js')))
 
 app.use(favicon('public/images/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+// API paths
 app.get('/api/artist', apiKeyMiddleware, ArtistClient.searchArtists);
 app.get('/api/artist-details/:artistId', apiKeyMiddleware, ArtistClient.getArtistDetails);
 
 app.get('*', (req, res) => {
-  res.sendfile('index.html', {
-    root: path.join(__dirname, '../public/'),
+  console.log(path.join(__dirname, '/frontend/'));
+  res.sendFile('index.html', {
+    root: path.join(__dirname, '/frontend/'),
   });
 });
+
 
 module.exports = app;

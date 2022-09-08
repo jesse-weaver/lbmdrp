@@ -1,0 +1,298 @@
+.header-main {
+  font-size: 3rem;
+  font-weight: 200;
+  font-family: 'Monoton';
+  margin: 5px 5px 25px 5px;
+}/* mobile */
+.search {
+  display: inline-flex;
+  filter: drop-shadow(0 0 0.75rem black);
+  width: 100%;
+}
+
+.search-box,
+.search-button {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.search-box {
+  width:100%; 
+}
+
+.search-button {
+  width: 60px;
+  height: 60px;
+}
+
+.search-icon {
+  background: none;
+  width: 53px;
+  height: auto;
+  border: none;
+}
+
+/* ipad */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+ {
+  .search-box {
+    font-size: 35px;
+  }
+  .search {
+    font-size: 35px;
+    width: 60%;
+    background-color: red;
+  }
+
+  .search-button {
+    font-size: 50px;
+  }
+}
+
+/* desktop */
+@media (min-width: 800px) {
+  .search-box,
+  .search-button {
+    font-size: 30px; 
+  }
+
+  .search-box {
+    width: 80%;
+  } 
+}
+
+
+
+
+
+
+
+.main {
+  display: grid;
+  
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 75px auto;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "sb sb sb sb sb sb sb sb sb sb sb sb"
+    "main main main main main main main main main main main main";
+  color: #fff;
+  font-family: 'Roboto',sans-serif;
+}
+
+.header {
+  grid-area: h;
+}
+
+.search-bar {
+  grid-area: sb;
+}
+
+.main-content {
+  grid-area: main;
+}
+
+/* desktop */
+@media (min-width: 800px) {
+  .main {
+    grid-template-areas:
+    "h h h h . . sb sb sb sb sb sb"
+    "main main main main main main main main main main main main"; 
+  }
+}.thumbnail-container { 
+    text-align: center;
+}
+
+.thumbnail-image {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(4px 0 0.35rem black);
+    background: white;
+}
+
+.thumbnail-title {
+    width: 300px;
+    font-size: .35em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.thumbnail-href-title {
+    text-decoration: none;
+    color: inherit;
+}
+
+.thumbnail-subtitle {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .thumbnail-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .thumbnail-title {
+     font-size: .25em;
+  }
+
+  .thumbnail-subtitle {
+    font-size: .15em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thumbnail-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .thumbnail-title {
+    font-size: .25em;
+  }
+
+  .thumbnail-subtitle {
+    font-size: .15em;
+  }
+}/* mobile/global */
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.search-result-item {
+  margin: 1%;
+  width: 48%;
+  font-size: 2rem;
+  color: white;
+}
+
+.search-result-item:hover {
+  background-color: rgb(255, 255, 255, .1);
+  color: #545454;
+}
+
+.artist-thumbnail {
+  margin-right: 25px;
+}
+
+.artist-thumbnail>img,
+.placeholder-thumbnail>img {
+  width: 300px;
+  height: 300px;
+  background: white;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .search-result-item {
+    font-size: 2em;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1275px) {
+  .search-result-item {
+    padding: 10px;
+    font-size: 5rem;
+    width: 200px;
+    margin-top: 25px;
+  }
+  .artist-thumbnail {
+    margin: 0;
+  }
+  .link {
+    font-size: 25px;
+  }
+}
+
+
+.artist-details {
+  color: white;
+  font-size: 4rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.artist-name {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+.artist-image {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  border-radius: 50%;
+}
+
+.spotify-uri {
+  margin: 30px 0 75px 0;
+}
+
+.spotify-uri > a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.artist-albums {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.artist-album {
+  margin: 1%;
+  width: 48%;
+  text-align: center
+}
+
+.album-image {
+  max-width: 75%;
+  margin: 10px;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+.album-name {
+  font-size: .35em
+}
+
+.release-date {
+  font-size: 1.5rem;
+}
+
+.more-albums {
+  margin-top: 25px;
+  
+}
+.more-albums > a {
+  cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+
+  .artist-image {
+    width: 15%;
+  }
+  
+}body {
+  background: url("/assets/images/blurryBackground.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
