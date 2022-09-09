@@ -21,8 +21,8 @@ To run the project run the following commands.  If using the docker container th
 * `npm run build`
 * `npm run start`
 
-To develop and listen for changes you'll need to run the following 3 commands in different terminal sessions which will pick up code changes as you make them:
+To develop and listen for changes you'll need to run the following commands in different terminal sessions which will pick up code changes as you make them:
 
 * `npm run babel:watch`
-* `npm run webpack:watch`
+* `npm run start:dev:webpack`
 * `npm run start:watch`

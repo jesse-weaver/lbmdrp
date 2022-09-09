@@ -34,7 +34,6 @@ export default class SearchBar extends Component {
       .then((results) => {
         if (!Array.isArray(results)) {
           throw new Error('No Results', err);
-          return;
         }
         this.props.onSearchResults(results);
         this.props.history.push(`/search/${query}`);

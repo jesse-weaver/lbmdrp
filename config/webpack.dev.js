@@ -16,6 +16,11 @@ module.exports = merge(common, {
     compress: true,
     hot: true,
     port: 8080,
+    // This proxies API requests to allow us to bypass having the webpack middleward config
+    // https://blog.campvanilla.com/react-express-hot-module-reloading-with-webpack-dev-server-5c9c67dcbb5e
+    proxy: {
+      "/api": "http://localhost:3030"
+    }
   },
 
   module: {
