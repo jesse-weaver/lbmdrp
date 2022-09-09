@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Redirect } from "react-router-dom";
 import PropTypes from 'prop-types';
 import searchCss from './SearchBar.css';
 import { SEARCH_RESULTS_SUCCESS } from '../../ducks';
@@ -20,6 +19,7 @@ export default class SearchBar extends Component {
   componentDidMount = () => {
     const query = this.props.match && this.props.match.params && this.props.match.params.query || null;
     if (query) {
+      console.log("trying to fetch")
       this.handleFetch(query);
     }
   }
@@ -27,6 +27,7 @@ export default class SearchBar extends Component {
   // this queries the api for data
   handleFetch = (query) => {
     const fetchUrl = `/api/artist?q=${query}`;
+    console.log(`fetchUrl: ${fetchUrl}`)
 
     fetch(fetchUrl)
       .then(response => response.json())
@@ -66,9 +67,7 @@ export default class SearchBar extends Component {
           ref={(input) => { this.searchInput = input; }}
           onKeyDown={this.handleKeyDown}
         />
-        <input type="image" className="search-button" name="search" value="search" src="/images/magIcon1.jpeg" onClick={this.handleClick}>
-          {}
-        </input>
+        <input type="image" className="search-button" name="search" value="search" src="assets/images/magIcon1.jpg" onClick={this.handleClick}/>
       </div>
     );
   }

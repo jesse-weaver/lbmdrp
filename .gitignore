@@ -1,4 +1,6 @@
+# any api keys
 apiKeys.json
+
 # Logs
 logs
 *.log
@@ -17,8 +19,6 @@ node_modules
 # transpiled assets
 /dist
 /build
-/public/app.*
-/public/stylesheets
 
 # IDE / OS specific files
 .idea/

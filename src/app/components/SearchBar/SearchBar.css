@@ -37,7 +37,7 @@
   }
   .search {
     font-size: 35px;
-    width: 600px;
+    width: 60%;
     background-color: red;
   }
 
@@ -47,14 +47,14 @@
 }
 
 /* desktop */
-@media (min-width: 1275px) {
+@media (min-width: 800px) {
   .search-box,
   .search-button {
     font-size: 30px; 
   }
 
   .search-box {
-    width: 500px;
+    width: 80%;
   } 
 }
 

@@ -6,12 +6,16 @@
     margin: 10px;
     width: 300px;
     height: 300px;
-    filter: drop-shadow(0 0 0.75rem black);
+    filter: drop-shadow(4px 0 0.35rem black);
     background: white;
 }
 
 .thumbnail-title {
+    width: 300px;
     font-size: .35em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .thumbnail-href-title {
@@ -25,8 +29,8 @@
 
 @media screen and (min-width: 768px) {
   .thumbnail-image {
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
   }
 
   .thumbnail-title {
@@ -38,10 +42,10 @@
   }
 }
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 1200px) {
   .thumbnail-image {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
   }
 
   .thumbnail-title {
