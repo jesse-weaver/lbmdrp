@@ -1,10 +1,11 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { createStore } from 'redux';
 import { reducers } from './ducks';
 import SearchResultsPage from './components/SearchResultsPage/SearchResultsPageContainer.jsx';
+import HomePage from './components/HomePage/HomePage.jsx';
 import ArtistDetailsPage from './components/ArtistDetailsPage/ArtistDetailsPageContainer.jsx';
 import './main.css';
 import './main.scss'
@@ -16,13 +17,19 @@ const store = createStore(
 );
 /* eslint-enable */
 
-render(
+
+const App = () => (
   <Provider store={store}>
     <BrowserRouter>
-      <Route exact path="/" component={SearchResultsPage} />
-      <Route exact path="/search/:query" component={SearchResultsPage} />
-      <Route exact path="/artist/:id" component={ArtistDetailsPage} />
+      <Routes>
+        <Route exact path="/" element={<HomePage/>} />
+        <Route exact path="/search/:query" element={<SearchResultsPage/>} />
+        <Route exact path="/artist/:id" element={<ArtistDetailsPage/>} />
+      </Routes>
     </BrowserRouter>
-  </Provider>,
-  document.getElementById('app'),
+  </Provider>
 );
+
+const rootElement = document.getElementById('app');
+const root = createRoot(rootElement)
+root.render(<App />)

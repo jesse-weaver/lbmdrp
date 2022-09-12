@@ -1,8 +1,8 @@
 
-
+/* Top image styles */
 .artist-details {
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
@@ -21,53 +21,52 @@
 
 .spotify-uri {
   margin: 30px 0 75px 0;
+  font-size: 1.5rem;
 }
 
 .spotify-uri > a {
-  font-size: 1.5rem;
+  font-size: 1em;
   text-decoration: none;
   color: #fff;
 }
 
 .artist-albums {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
 
 .artist-album {
   margin: 1%;
   width: 48%;
-  text-align: center
+  font-size: 1em;
+  color: white;
+  background-color: #757575;
+  border: 1px solid;    
 }
 
-.album-image {
-  max-width: 75%;
-  margin: 10px;
-  filter: drop-shadow(0 0 0.75rem black);
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .artist-album {
+    width: 30%;
+  }
+
+  .artist-image {
+    width: 20%;
+  }
 }
 
-.album-name {
-  font-size: .35em
-}
-
-.release-date {
-  font-size: 1.5rem;
-}
-
-.more-albums {
-  margin-top: 25px;
-  
-}
-.more-albums > a {
-  cursor: pointer;
-}
-
-@media (min-width: 1000px) {
+/* desktop */
+@media only screen and (min-width: 1200px) {
+  .artist-album {
+    padding: 10px;
+    font-size: 1.5em;
+    width: 300px;
+    margin-top: 25px;
+  }
 
   .artist-image {
     width: 15%;
-  }
-  
+  }  
 }

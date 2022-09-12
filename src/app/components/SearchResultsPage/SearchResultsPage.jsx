@@ -11,7 +11,7 @@ const SearchResultsPage = ({ searchResults }) => (
         <div>No Artists Found</div>
       )}
       {searchResults.map(item => (
-        <div className="search-result-item">
+        <div className="search-result-item" key={item.mkid}>
           <ThumbnailCard
             key={item.mkid}
             title={item.name}

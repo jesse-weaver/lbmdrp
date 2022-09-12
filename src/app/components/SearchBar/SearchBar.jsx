@@ -1,31 +1,15 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { useNavigate, Navigate } from "react-router-dom";
 import searchCss from './SearchBar.css';
 import { SEARCH_RESULTS_SUCCESS } from '../../ducks';
 
-export default class SearchBar extends Component {
-  static propTypes = {
-    onSearchResults: PropTypes.func.isRequired,
-  }
+const SearchBar = (props) => {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      results: [],
-      query: ''
-    }
-  }
-
-  componentDidMount = () => {
-    const query = this.props.match && this.props.match.params && this.props.match.params.query || null;
-    if (query) {
-      console.log("trying to fetch")
-      this.handleFetch(query);
-    }
-  }
-
+  let navigate = useNavigate()
+  
   // this queries the api for data
-  handleFetch = (query) => {
+  const handleFetch = (query) => {
     const fetchUrl = `/api/artist?q=${query}`;
     console.log(`fetchUrl: ${fetchUrl}`)
 
@@ -35,39 +19,35 @@ export default class SearchBar extends Component {
         if (!Array.isArray(results)) {
           throw new Error('No Results', err);
         }
-        this.props.onSearchResults(results);
-        this.props.history.push(`/search/${query}`);
+        console.log("got results: ", results)
+        props.onSearchResults(results);
       }).catch(err => {
         console.log(`Errors when fetching ${fetchUrl}:`, err);
       });
   }
 
-  handleClick = () => {
-    const query = this.searchInput.value;
-    this.handleFetch(query);
-  }
-
-  handleKeyDown = (e) => {
+  const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
-      this.handleClick();
+      let query = e.target.value;
+      let redirectUrl = `/search/${query}`
+      handleFetch(query);
+      return navigate(redirectUrl);    
     }
   }
 
-  render() {
-    return (
-      <div className="search">
-        <input
-          className="search-box"
-          name="q"
-          type="text"
-          size="20"
-          placeholder="Search Artists..."
-          autoComplete="off"
-          ref={(input) => { this.searchInput = input; }}
-          onKeyDown={this.handleKeyDown}
-        />
-        <input type="image" className="search-button" name="search" value="search" src="assets/images/magIcon1.jpg" onClick={this.handleClick}/>
-      </div>
-    );
-  }
+  return (
+    <div className="search">
+      <input
+        className="search-box"
+        name="q"
+        type="text"
+        size="20"
+        placeholder="Search Artists..."
+        autoComplete="off"
+        onKeyDown={handleKeyDown}
+      />
+    </div>
+  );
 }
+
+export default SearchBar;

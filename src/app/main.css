@@ -1,6 +1,6 @@
 body {
   /* background: url("/images/example4.jpeg") no-repeat center center fixed; */
-  /* background: url("/images/blurryBackground.jpeg") no-repeat center center fixed; */
+  /* background: url("/assets/images/blurryBackground.jpeg") no-repeat center center fixed; */
   
   -webkit-background-size: cover;
   -moz-background-size: cover;

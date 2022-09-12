@@ -5,26 +5,13 @@
   width: 100%;
 }
 
-.search-box,
-.search-button {
+.search-box {
   font-size: 1.75rem;
   text-align: center;
 }
 
 .search-box {
-  width:100%; 
-}
-
-.search-button {
-  width: 60px;
-  height: 60px;
-}
-
-.search-icon {
-  background: none;
-  width: 53px;
-  height: auto;
-  border: none;
+  width: 100%; 
 }
 
 /* ipad */
@@ -37,24 +24,13 @@
   }
   .search {
     font-size: 35px;
-    width: 60%;
-    background-color: red;
-  }
-
-  .search-button {
-    font-size: 50px;
   }
 }
 
 /* desktop */
-@media (min-width: 800px) {
-  .search-box,
-  .search-button {
-    font-size: 30px; 
-  }
-
+@media (min-width: 1024px) {
   .search-box {
-    width: 80%;
+    font-size: 30px; 
   } 
 }
 
