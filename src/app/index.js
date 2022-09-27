@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { createStore } from 'redux';
 import { reducers } from './ducks';
 import SearchResultsPage from './components/SearchResultsPage/SearchResultsPageContainer.jsx';
-import HomePage from './components/HomePage/HomePage.jsx';
+import HomePage from './components/HomePage/HomePageContainer';
 import ArtistDetailsPage from './components/ArtistDetailsPage/ArtistDetailsPageContainer.jsx';
 import './main.css';
 import './main.scss'

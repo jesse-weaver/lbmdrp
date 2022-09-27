@@ -1,0 +1,42 @@
+/* mobile/global */
+.followed-artist {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  list-style-type: none;
+}
+
+.followed-artist-container {
+  background: rgb(20,52,75);
+  background: linear-gradient(0deg, rgba(20,52,75,1) 41%, rgba(191,151,141,1) 100%);
+  border: 1px solid;  
+}
+
+.followed-artist-container > ul {
+  padding: 5px;
+}
+
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .search-result-item {
+    font-size: 2em;
+    width: 30%;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1200px) {
+  .search-result-item {
+    padding: 10px;
+    font-size: 5rem;
+    width: 300px;
+    margin-top: 25px;
+  }
+  .artist-thumbnail {
+    margin: 0;
+  }
+  .link {
+    font-size: 25px;
+  }
+}

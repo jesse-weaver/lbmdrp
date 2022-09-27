@@ -5,7 +5,7 @@ module.exports = {
     "es6": true,
     "node": true,
   },
-  "extends": "airbnb",
+  "extends": "airbnb-base",
   "parserOptions": {
     "sourceType": "module",
   },

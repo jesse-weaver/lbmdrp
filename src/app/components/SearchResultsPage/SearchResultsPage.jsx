@@ -4,25 +4,29 @@ import Layout from '../Layout/Layout.jsx';
 import ThumbnailCard from '../ThumbnailCard/ThumbnailCard.jsx';
 import searchResultsPageCss from './SearchResultsPage.css';
 
-const SearchResultsPage = ({ searchResults }) => (
-  <Layout displaySearchBar>
-    <div className="search-results">
-      {!searchResults.length && (
-        <div>No Artists Found</div>
-      )}
-      {searchResults.map(item => (
-        <div className="search-result-item" key={item.mkid}>
-          <ThumbnailCard
-            key={item.mkid}
-            title={item.name}
-            image={item.image}
-            href={`/artist/${item.mkid}`}
-          />
-        </div>
-      ))}
-    </div>
-  </Layout>
-);
+const SearchResultsPage = ({ searchResults }) => {
+  const query = searchResults.query || null;
+  const results = searchResults.results || [];
+  return (
+    <Layout displaySearchBar>
+      <div className="search-results">
+        {!results.length && (
+          <div>No Artists Found for Search: {query}</div>
+        )}
+        {results.map(item => (
+          <div className="search-result-item" key={item.mkid}>
+            <ThumbnailCard
+              key={item.mkid}
+              title={item.name}
+              image={item.image}
+              href={`/artist/${item.mkid}`}
+            />
+          </div>
+        ))}
+      </div>
+    </Layout>
+  );
+}
 
 SearchResultsPage.propTypes = {
   searchResults: PropTypes.arrayOf(

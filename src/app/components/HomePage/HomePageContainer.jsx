@@ -1,16 +1,24 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import SearchResultsPage from './HomePage.jsx';
+import { IS_LOGGED_IN_SUCCESS } from '../../ducks/actions.js';
+import HomePage from './HomePage.jsx';
 
 
 const mapStateToProps = (state) => {
   return {
-    searchResults: state.searchResults,
+    isLoggedIn: state.isLoggedIn,
   };
 };
 
-const SearchResultsPageContainer = connect(
-  mapStateToProps,
-)(SearchResultsPage);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onIsLoggedIn: results => dispatch({ type: IS_LOGGED_IN_SUCCESS, payload: results }),
+  };
+};
 
-export default SearchResultsPageContainer;
+const HomePageContainer = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(HomePage);
+
+export default HomePageContainer;
