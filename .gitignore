@@ -24,3 +24,4 @@ node_modules
 .idea/
 .vscode/
 .DS_Store
+*.code-workspace

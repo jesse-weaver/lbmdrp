@@ -17,10 +17,13 @@ const SearchBar = (props) => {
       .then(response => response.json())
       .then((results) => {
         if (!Array.isArray(results)) {
-          throw new Error('No Results', err);
+          throw new Error('No Results returned from request, results: ', results);
         }
         console.log("got results: ", results)
-        props.onSearchResults(results);
+        props.onSearchResults({
+          query,
+          results,
+        });
       }).catch(err => {
         console.log(`Errors when fetching ${fetchUrl}:`, err);
       });

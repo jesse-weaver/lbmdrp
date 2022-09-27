@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+const fetch = require('node-fetch');
 import { get, uniqBy } from 'lodash';
 import logger from 'debug';
 
@@ -18,6 +18,7 @@ export default class Artist {
     const query = get(req, 'query.q', '');
     const requestUrl = `${baseUrl}/search/?q=${query}&type=artist&limit=25`;
 
+    let statusCode = 0;
     fetch(requestUrl, {
       method: 'get',
       headers: {
@@ -25,12 +26,16 @@ export default class Artist {
         Authorization: res.locals.requestToken,
       },
     })
-    .then(result => result.json())
+    .then((result) => {
+      statusCode = result.status;
+      return result.json()
+    })
     .then((response) => {
-      // response.artists.items.forEach((artist) => {
-      //   console.log(artist.images);
-      // });
-
+      if (statusCode !== 200) {
+        console.log("search response: ", response)
+        res.json({ error: response });
+        return 
+      }
       const results = response.artists.items.map(artist => ({
         mkid: artist.id,
         name: artist.name,

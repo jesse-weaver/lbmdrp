@@ -1,40 +1,50 @@
 /* mobile/global */
+
+/* layout styles */
+.home-page-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 75px auto;
+  grid-template-areas:
+    "l l l l l l"
+    "pl pl np np f f"
+    "pl pl r r f f";
+}
+
+#login {
+  grid-area: l;
+}
+
+#now-playing {
+  grid-area: np;
+}
+
+#releases {
+  grid-area: r;
+}
+
+#playlists {
+  grid-area: pl;
+}
+
+#following {
+  grid-area: f;
+}
+
+/* content styles */
 .link {
   color: white;
   text-decoration: none;
 }
 
-.search-results {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
+.spotify-login {
+  width: 180px;
 }
 
-.search-result-item {
-  margin: 1%;
-  width: 48%;
-  font-size: 2rem;
-  color: white;
+h3 {
+  font-family: 'Monoton';
+  font-size: 16px;
 }
-
-.search-result-item:hover {
-  background-color: rgb(255, 255, 255, .1);
-  color: #545454;
-}
-
-.artist-thumbnail {
-  margin-right: 25px;
-}
-
-/* .artist-thumbnail>img,
-.placeholder-thumbnail>img {
-  max-width: 250px;
-  max-height: 250px;
-  background: white;
-  filter: drop-shadow(0 0 0.75rem black);
-} */
-
 /* tablet */
 @media only screen and (min-width: 768px) {
   .search-result-item {
